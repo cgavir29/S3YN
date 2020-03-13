@@ -6,13 +6,16 @@ import store from './store'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 
-Vue.use(Buefy)
+Vue.use(Buefy, {
+  defaultIconPack: 'fas',
+  defaultContainerElement: '#content'
+})
 
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  Buefy,
+  // Buefy,
   render: h => h(App)
 }).$mount('#app')

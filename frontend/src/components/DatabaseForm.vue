@@ -1,5 +1,5 @@
 <template>
-  <section class>
+    <div class="container is-fluid">
     <b-field label="Database Name">
       <b-input v-model="db.name" type="text" required></b-input>
     </b-field>
@@ -16,8 +16,8 @@
       <b-input v-model="db.password" type="password" password-reveal required></b-input>
     </b-field>
 
-    <b-button v-on:click="handleSubmit" type="is-success">Connect</b-button>
-  </section>
+    <b-button v-on:click="handleSubmit" type="is-warning">Add</b-button>
+    </div>
 </template>
 
 <script>

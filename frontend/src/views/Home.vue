@@ -1,13 +1,7 @@
 <template>
-  <div class="home">
-    <section class="hero is-fullheight is-warning">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">S3YN</h1>
-            <DatabaseForm />
-        </div>
-      </div>
-    </section>
+  <div>
+      <h1 class="title">Add Database Credentials</h1>
+      <DatabaseForm />
   </div>
 </template>
 
