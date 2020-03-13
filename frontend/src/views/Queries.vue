@@ -9,6 +9,7 @@
 import DatabaseQuery from '@/components/DatabaseQuery.vue'
 
 export default {
+  name: 'Queries',
   components: {
     DatabaseQuery
   }

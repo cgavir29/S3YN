@@ -2,31 +2,37 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Query from '../views/Query.vue'
-import Visualization from '../views/Visualization.vue'
+import Databases from '../views/Databases.vue'
+import Queries from '../views/Queries.vue'
+import Visualizations from '../views/Visualizations.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
   },
   {
     path: '/about',
-    name: 'about',
+    name: 'About',
     component: About
   },
   {
-    path: '/query',
-    name: 'query',
-    component: Query
+    path: '/databases',
+    name: 'Databases',
+    component: Databases
   },
   {
-    path: '/visualization',
-    name: 'visualization',
-    component: Visualization
+    path: '/queries',
+    name: 'Queries',
+    component: Queries
+  },
+  {
+    path: '/visualizations',
+    name: 'Visualizations',
+    component: Visualizations
   }
 ]
 

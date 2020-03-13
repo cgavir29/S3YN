@@ -3,7 +3,7 @@
     <header class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <router-link class="navbar-item title has-text-warning" :to="{ name : 'home' }">S3YN</router-link>
+          <router-link class="navbar-item title has-text-warning" :to="{ name : 'Home' }">S3YN</router-link>
           <!-- <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
@@ -14,13 +14,13 @@
           <div class="navbar-end">
             <router-link
               class="navbar-item"
-              :to="{ name : 'home' }"
+              :to="{ name : 'Home' }"
               active-class="is-active"
               exact
             >Home</router-link>
             <router-link
               class="navbar-item"
-              :to="{ name : 'about' }"
+              :to="{ name : 'About' }"
               active-class="is-active"
               exact
             >About</router-link>

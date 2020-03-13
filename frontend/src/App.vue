@@ -3,9 +3,11 @@
     <TheNavbar />
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <router-view />
+    <div class="column is-half is-offset-one-quarter">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <router-view />
+        </div>
       </div>
     </div>
 

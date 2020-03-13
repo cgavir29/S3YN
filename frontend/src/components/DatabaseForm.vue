@@ -1,5 +1,5 @@
 <template>
-    <div class="container is-fluid">
+    <div class="container">
     <b-field label="Database Name">
       <b-input v-model="db.name" type="text" required></b-input>
     </b-field>
@@ -16,7 +16,7 @@
       <b-input v-model="db.password" type="password" password-reveal required></b-input>
     </b-field>
 
-    <b-button v-on:click="handleSubmit" type="is-warning">Add</b-button>
+    <b-button class="has-text-weight-bold is-warning" v-on:click="handleSubmit">Add</b-button>
     </div>
 </template>
 

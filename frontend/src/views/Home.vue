@@ -1,17 +1,5 @@
 <template>
   <div>
-      <h1 class="title">Add Database Credentials</h1>
-      <DatabaseForm />
+    <h1 class="title">Welcome to S3YN</h1>
   </div>
 </template>
-
-<script>
-import DatabaseForm from '@/components/DatabaseForm.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    DatabaseForm
-  }
-}
-</script>
