@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Port where it runs
-EXPOSE 3000
+EXPOSE 8080
 
 # Command to run server
 CMD [ "npm", "run", "serve" ]
