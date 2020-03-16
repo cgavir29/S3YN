@@ -1,5 +1,5 @@
 # Docker node version
-FROM node:13.11.0
+FROM node:13.10.1
 
 # Create app directory
 WORKDIR /app
