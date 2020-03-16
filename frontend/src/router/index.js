@@ -2,9 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Databases from '../views/Databases.vue'
-import Queries from '../views/Queries.vue'
-import Visualizations from '../views/Visualizations.vue'
+import Uploads from '../views/Uploads.vue'
+import Charts from '../views/Charts.vue'
 
 Vue.use(VueRouter)
 
@@ -20,19 +19,14 @@ const routes = [
     component: About
   },
   {
-    path: '/databases',
-    name: 'Databases',
-    component: Databases
+    path: '/uploads',
+    name: 'Uploads',
+    component: Uploads
   },
   {
-    path: '/queries',
-    name: 'Queries',
-    component: Queries
-  },
-  {
-    path: '/visualizations',
-    name: 'Visualizations',
-    component: Visualizations
+    path: '/charts',
+    name: 'Charts',
+    component: Charts
   }
 ]
 
