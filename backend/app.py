@@ -1,55 +1,48 @@
 from flask import Flask, request, jsonify
-from mongoengine import *
+from flask_mongoengine import MongoEngine
+
+from models.result import Result
+from models.user import User
+
+import auth
+import config
+
 
 app = Flask(__name__)
+app.config['MONGODB_SETTINGS'] = config.MONGODB_SETTINGS
 app.url_map.strict_slashes = False
 
-DB_URI = 'mongodb+srv://s3yn:s3yn@pi2-j348a.mongodb.net/test?retryWrites=true&w=majority'
-connect(host=DB_URI)
+
+@app.route('/login', methods=['POST'])
+def login():
+    email = request.json.get('email')
+    password = request.json.get('password')
+
+    user = User.check_credentials(email, password)
+    if not user:
+        return jsonify({'msg': 'Incorrect credentials'})
+
+    return user.to_json()
+
+    # user = User.objects(email=email)
+    # if not user:
+    #    return jsonify({'msg' : 'User not found'})
+
+    # if not auth.check_encrypted_password(password, user.password):
+    #     return jsonify({'msg' : 'Password incorrect'})
+
+    # return user.to_json()
 
 
-class Credential(Document):
-    name = StringField(max_length=100, required=True)
-    url = StringField(max_length=255, required=True)
-    username = StringField(max_length=100, required=True)
-    password = StringField(max_length=200, required=True)
-
-
-@app.route('/api/credentials', methods=['GET'])
-def get_credentials():
-    credentials = Credential.objects()
-    return credentials.to_json()
-
-
-@app.route('/api/credentials/<credential_id>', methods=['GET'])
-def get_credential(credential_id):
-    credential = Credential.objects(id=credential_id)
-    if not credential:
-        return jsonify({'msg': 'Credential not found'})
-
-    return credential.to_json()
-
-
-@app.route('/api/credentials', methods=['POST'])
-def post_credential():
-    credential = Credential(
+@app.route('/register', methods=['POST'])
+def register():
+    user = User(
         name=request.json.get('name'),
-        url=request.json.get('url'),
-        username=request.json.get('username'),
-        password=request.json.get('password')
+        email=request.json.get('email'),
+        password=auth.encrypt_password(request.json.get('password'))
     )
-    credential.save()
-    return credential.to_json()
 
-
-@app.route('/api/credentials/<credential_id>', methods=['DELETE'])
-def delete_credential(credential_id):
-    credential = Credential.objects(id=credential_id)
-    if not credential:
-        return jsonify({'msg': 'Credential not found'})
-
-    credential.delete()
-    return jsonify({'msg': 'Credential deleted'})
+    user.save()
 
 
 if __name__ == '__main__':
