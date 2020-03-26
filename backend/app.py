@@ -9,8 +9,10 @@ import config
 
 
 app = Flask(__name__)
-app.config['MONGODB_SETTINGS'] = config.MONGODB_SETTINGS
 app.url_map.strict_slashes = False
+
+app.config['MONGODB_HOST'] = config.DB_URI
+db = MongoEngine(app)
 
 
 @app.route('/login', methods=['POST'])
@@ -20,29 +22,24 @@ def login():
 
     user = User.check_credentials(email, password)
     if not user:
-        return jsonify({'msg': 'Incorrect credentials'})
+        return jsonify({'msg': 'Incorrect credentials'}), 404
 
     return user.to_json()
-
-    # user = User.objects(email=email)
-    # if not user:
-    #    return jsonify({'msg' : 'User not found'})
-
-    # if not auth.check_encrypted_password(password, user.password):
-    #     return jsonify({'msg' : 'Password incorrect'})
-
-    # return user.to_json()
 
 
 @app.route('/register', methods=['POST'])
 def register():
-    user = User(
-        name=request.json.get('name'),
-        email=request.json.get('email'),
-        password=auth.encrypt_password(request.json.get('password'))
-    )
+    try:
+        user = User(
+            name=request.json.get('name'),
+            email=request.json.get('email'),
+            password=auth.encrypt_password(request.json.get('password'))
+        )
+        user.save()
+    except:
+        return jsonify({'msg': 'Email already taken'}), 500
 
-    user.save()
+    return user.to_json()
 
 
 if __name__ == '__main__':
