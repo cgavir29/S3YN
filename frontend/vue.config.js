@@ -1,6 +1,7 @@
 module.exports = {
   devServer: {
-    disableHostCheck: true
+    disableHostCheck: true,
+    proxy: 'http://localhost:5000'
   },
   css: {
     loaderOptions: {

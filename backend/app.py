@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from flask_mongoengine import MongoEngine
 
 from models.result import Result
@@ -10,9 +11,10 @@ import config
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-
 app.config['MONGODB_HOST'] = config.DB_URI
+
 db = MongoEngine(app)
+CORS(app)
 
 
 @app.route('/login', methods=['POST'])
@@ -24,7 +26,7 @@ def login():
     if not user:
         return jsonify({'msg': 'Incorrect credentials'}), 404
 
-    return user.to_json()
+    return jsonify({'user': user.to_json()})
 
 
 @app.route('/register', methods=['POST'])

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import database from './modules/database'
+import account from './modules/account'
 
 Vue.use(Vuex)
 
@@ -13,6 +13,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    database
+    account
   }
 })

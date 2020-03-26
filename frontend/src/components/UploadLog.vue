@@ -15,12 +15,18 @@
 
     <div class="tags has-text-centered">
       <span v-for="(file, index) in dropFiles" :key="index" class="tag is-info">
-        {{file.name}}
-        <button class="delete is-small" type="button" @click="deleteDropFile(index)"></button>
+        {{ file.name }}
+        <button
+          class="delete is-small"
+          type="button"
+          @click="deleteDropFile(index)"
+        ></button>
       </span>
     </div>
 
-    <b-button type="is-warning" @click="evaluatePatterns()">Evaluate Patterns</b-button> |
+    <b-button type="is-warning" @click="evaluatePatterns()"
+      >Evaluate Patterns</b-button
+    >|
     <b-button type="is-twitter">Save Results</b-button>
   </div>
 </template>
@@ -30,43 +36,43 @@ export default {
   data() {
     return {
       dropFiles: []
-    }
+    };
   },
   methods: {
     evaluatePatterns() {
       if (this.dropFiles.length) {
-        console.log('leyendo')
-        const reader = new FileReader()
+        console.log("leyendo");
+        const reader = new FileReader();
         const a = new Promise((resolve, reject) => {
-          reader.onload = event => resolve(event.target.result)
-          reader.onerror = error => reject(error)
-          reader.readAsText(this.dropFiles[0])
-        })
+          reader.onload = event => resolve(event.target.result);
+          reader.onerror = error => reject(error);
+          reader.readAsText(this.dropFiles[0]);
+        });
 
         a.then(res => {
           this.$buefy.dialog.alert({
-            title: 'Uploaded Log',
+            title: "Uploaded Log",
             message: res,
-            type: 'is-info',
-            confirmText: 'Ok'
-          })
-        })
+            type: "is-info",
+            confirmText: "Ok"
+          });
+        });
       } else {
         this.$buefy.dialog.alert({
-          title: 'Error',
-          message: 'Please upload a file first.',
-          type: 'is-danger',
+          title: "Error",
+          message: "Please upload a file first.",
+          type: "is-danger",
           hasIcon: true,
-          icon: 'times-circle',
-          iconPack: 'fa',
-          ariaRole: 'alertdialog',
+          icon: "times-circle",
+          iconPack: "fa",
+          ariaRole: "alertdialog",
           ariaModal: true
-        })
+        });
       }
     },
     deleteDropFile(index) {
-      this.dropFiles.splice(index, 1)
+      this.dropFiles.splice(index, 1);
     }
   }
-}
+};
 </script>
