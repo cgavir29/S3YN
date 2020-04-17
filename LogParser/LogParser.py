@@ -1,15 +1,14 @@
-from Event import Event
-
 from collections import defaultdict
+import hashlib
 
 class LogParser():
 
     def __init__(self, inFile):
 
         self.inFile = inFile
-        self.logs = []
-        self.logParams = []
-        self.bins = defaultdict(dict)    
+        self.logs = []    
+        self.events = defaultdict(dict)
+        self.bins = defaultdict(dict)
 
     def parse(self):
 
@@ -17,25 +16,7 @@ class LogParser():
         self.tokenize()
         self.categorize()
 
-        eventCounter = 0
-        conflictCounter = 0
-
-        for key in self.bins:
-
-            binContent = self.bins[key]
-
-            for event in binContent['Events']: 
-                print(event.getEventStr())
-                eventCounter += 1
-            
-            if len(binContent['Events']) > 1: 
-                conflictCounter += 1
-                for k in range(len(binContent['Events'])): print('*') 
-
-        print(str(len(self.logs)) + ' log lines.')
-        print(str(eventCounter) + " events found.")
-        print(str(conflictCounter) + " conflicts found.")
-
+        return self.logs, self.events
 
     def anonymize(self):
 
@@ -44,38 +25,40 @@ class LogParser():
 
                 logTokens = line.split()
                 
-                abstractLog = ''
+                logTemplate = ''
                 params = []
+                blk = ''
                 
                 for token in logTokens:
 
                     if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk': 
                         params.append(token)
+                        if token[:3] == 'blk': blk = token
                         token = '<*>'
 
-                    abstractLog += token + ' '
+                    logTemplate += token + ' '
 
-                self.logs.append(abstractLog)
-                self.logParams.append(params)
+                self.logs.append({'LogTemplate': logTemplate, 'Params': params, 'blk': blk, 'Event': ''})
+                 
                 
     def tokenize(self):
 
-        logIdx = 0
+        logIndex = 0
 
-        for logStr in self.logs:
+        for log in self.logs:
 
-            paramCounter = 0
-            tokens = logStr.split() 
+            numParams = len(log['Params'])
+            numTokens = len(log['LogTemplate'].split()) 
 
-            for token in tokens: 
-                if token == "<*>": paramCounter += 1
+            if 'Logs' not in self.bins[(numTokens, numParams)]:
 
-            if 'Logs' not in self.bins[(len(tokens), paramCounter)]: 
-                self.bins[(len(tokens), paramCounter)]['Logs'] = [logIdx]
+                self.bins[(numTokens, numParams)]['Logs'] = [logIndex]
+
             else: 
-                self.bins[(len(tokens), paramCounter)]['Logs'].append(logIdx)
+                
+                self.bins[(numTokens, numParams)]['Logs'].append(logIndex)
 
-            logIdx += 1
+            logIndex += 1
 
     def categorize(self):
 
@@ -84,19 +67,23 @@ class LogParser():
             binContent = self.bins[key]
             binContent['Events'] = []
 
-            for logIdx in binContent['Logs']:
+            for logIndex in binContent['Logs']:
             
-                logStr = self.logs[logIdx]
+                logTemplate = self.logs[logIndex]['LogTemplate']
                 matched = False
 
-                for event in binContent['Events']:
+                for eventIndex in binContent['Events']:
                 
-                    if logStr == event.eventStr:
+                    if logTemplate == self.events[eventIndex]:
                     
                         matched = True
-                        event.logs.append(logIdx)
+                        self.logs[logIndex]['Event'] = eventIndex
                         break
             
                 if not matched:
-                    binContent['Events'].append(Event(logIdx, logStr))
+                    
+                    eventIndex = hashlib.md5(logTemplate.encode('utf-8')).hexdigest()[0:8]
+                    self.events[eventIndex] = logTemplate
+                    self.logs[logIndex]['Event'] = eventIndex 
+                    binContent['Events'].append(eventIndex)
     
