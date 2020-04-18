@@ -3,10 +3,11 @@ from feature_extractor import FeatureExtractor
 
 extractor = FeatureExtractor('HDFS_1K.log')
 
-log_sequences = extractor.extract()
+extractor.extract()
 
 
-
+# lp1 = LogParser('HDFS_10.log')
+#lp1 = LogParser('HDFS_100.log')
 # lp1 = LogParser('HDFS_1K.log')
 '''lp1 = LogParser('HDFS_10.log')
 lp1.anonymize()

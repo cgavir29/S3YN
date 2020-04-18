@@ -1,5 +1,4 @@
 import re
-import hashlib
 
 
 class LogParser():
@@ -7,11 +6,12 @@ class LogParser():
         self.input_file = input_file
         self.anonymized_data = []
         self.blk_events = []
-        self.events = {}
+        self.events = []
         self.bins = {}
         self.WORD_REGEX = r'([a-zA-Z]+)\s?'
         self.PARAM_REGEX = r'\<*\>'
 
+    # --------------------------------------------------------------------------------------------
     def parse(self):
         self.anonymize()
         self.tokenize()
@@ -19,6 +19,7 @@ class LogParser():
 
         return self.events, self.blk_events
 
+    # --------------------------------------------------------------------------------------------
     def anonymize(self):
         '''
             Takes the relevant data from the dataset and anonymizes dynamic tokens
@@ -28,47 +29,28 @@ class LogParser():
         '''
         with open(self.input_file) as log_file:
             for log in log_file:
-                cleaned_log = log.split(':', 1) # Remove unnecessary data
+                cleaned_log = log.split(':', 1)  # Remove unnecessary data
                 tokens = cleaned_log[1].split()
                 log_template = ''
 
                 for token in tokens:
                     if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk':
+                        if token[:3] == 'blk':
+                            # Register blk and to-be determined event
+                            self.blk_events.append([token, -1])
+
                         token = '<*>'
 
                     log_template += token + ' '
 
                 self.anonymized_data.append(log_template.strip())
 
-        # agregar los blks
-
-
-        # with open(self.input_file, 'r') as log_file:
-
-        #     for line in log_file.readlines():
-        #         log_tokens = line.split()
-        #         logTemplate = ''
-        #         params = []
-        #         blk = ''
-
-        #         for token in log_tokens:
-
-        #             if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk':
-        #                 params.append(token)
-        #                 if token[:3] == 'blk':
-        #                     blk = token
-        #                 token = '<*>'
-
-        #             logTemplate += token + ' '
-
-        #         self.logs.append({'LogTemplate': logTemplate,
-        #                           'Params': params, 'blk': blk, 'Event': ''})
-
+    # --------------------------------------------------------------------------------------------
     def tokenize(self):
         '''
             After the data has been anonymized, this step takes care of separating it into
-            collections which are formed based on the number of words and params (dynamic tokens) in
-            each log.
+            collections which are formed based on the number of words and params (dynamic tokens)
+            in each log.
 
             Aditional data, namely the 'events' key is added to ease the categorization step.
         '''
@@ -76,7 +58,8 @@ class LogParser():
             num_of_words = len(re.findall(self.WORD_REGEX, log))
             num_of_params = len(re.findall(self.PARAM_REGEX, log))
 
-            key = f'{num_of_words}.{num_of_params}'  # Set key for that log -> 'w.p'
+            # Set key for that log -> 'w.p'
+            key = f'{num_of_words}.{num_of_params}'
 
             if not self.bins.get(key):
                 # Create an item in the dict if it doesn't exist already
@@ -88,46 +71,24 @@ class LogParser():
                 # Otherwise add to that existing item
                 self.bins.get(key).get('logs').append(idx)
 
-        # log_index = 0
-
-        # for log in self.logs:
-
-        #     if 'Logs' not in self.bins[(numTokens, numParams)]:
-
-        #         self.bins[(numTokens, numParams)]['Logs'] = [log_index]
-
-        #     else:
-
-        #         self.bins[(numTokens, numParams)]['Logs'].append(log_index)
-
-        #     log_index += 1
-
+    # --------------------------------------------------------------------------------------------
     def categorize(self):
-        for key, val in self.bins.items():
-            pass
+        '''
+            Determines the resulting events in the data set and adds them to the to each bin 
+            as well as to the self.events list.
 
-        # for key in self.bins:
+            It also overrides the self.blk_events index (-1) so it references an event in the
+            self.events list.
+        '''
+        for value in self.bins.values():
+            for log_index in value.get('logs'):
+                log_template = self.anonymized_data[log_index]
 
-        #     binContent = self.bins[key]
-        #     binContent['Events'] = []
-
-        #     for log_index in binContent['Logs']:
-
-        #         logTemplate = self.logs[log_index]['LogTemplate']
-        #         matched = False
-
-        #         for eventIndex in binContent['Events']:
-
-        #             if logTemplate == self.events[eventIndex]:
-
-        #                 matched = True
-        #                 self.logs[log_index]['Event'] = eventIndex
-        #                 break
-
-        #         if not matched:
-
-        #             eventIndex = hashlib.md5(
-        #                 logTemplate.encode('utf-8')).hexdigest()[0:8]
-        #             self.events[eventIndex] = logTemplate
-        #             self.logs[log_index]['Event'] = eventIndex
-        #             binContent['Events'].append(eventIndex)
+                if log_template in self.events:
+                    event_index = self.events.index(log_template)
+                    self.blk_events[log_index][1] = event_index
+                else:
+                    self.events.append(log_template)
+                    event_index = len(self.events) - 1
+                    value.get('events').append(event_index)
+                    self.blk_events[log_index][1] = event_index
