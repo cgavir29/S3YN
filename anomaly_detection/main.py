@@ -1,8 +1,14 @@
 from log_parser import LogParser
 
+# lp1 = LogParser('HDFS_10.log')
+lp1 = LogParser('HDFS_100.log')
 # lp1 = LogParser('HDFS_1K.log')
-lp1 = LogParser('HDFS_10.log')
-lp1.anonymize()
-print(lp1.anonymized_data)
-lp1.tokenize()
+events, blk_events = lp1.parse()
+
+print(f'Total Events {len(events)}:')
+print(events)
+print()
+# print('Blk-Events:')
+# print(blk_events)
+
 print(lp1.bins)
