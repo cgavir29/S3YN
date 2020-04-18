@@ -26,8 +26,8 @@ class MyLogParser():
     def parse(self):
         self.load_data()
         self.anonymize()
-        self.tokenize()
-        self.categorize()
+        # self.tokenize()
+        # self.categorize()
 
     def load_data(self):
         with open(self.log_file) as file:
@@ -62,7 +62,8 @@ class MyLogParser():
 
 
 if __name__ == '__main__':
-    mlp = MyLogParser('HDFS_10.log')
+    mlp = MyLogParser('HDFS_1K.log')
     mlp.parse()
-    print(mlp.bins)
-    print(mlp.bins.keys())
+    print(mlp.anonymized_data)
+    # print(mlp.bins)
+    # print(mlp.bins.keys())
