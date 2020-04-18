@@ -10,7 +10,7 @@ class LogParser():
         self.events = {}
         self.bins = {}
         self.WORD_REGEX = r'([a-zA-Z]+)\s?'
-        self.PARM_REGEX = r'\<*\>'
+        self.PARAM_REGEX = r'\<*\>'
 
     def parse(self):
         self.anonymize()
@@ -28,24 +28,20 @@ class LogParser():
         '''
         with open(self.input_file) as log_file:
             for log in log_file:
-                cleaned_log = log.split(':', 1)  # remove unnecessary data
+                cleaned_log = log.split(':', 1) # Remove unnecessary data
                 tokens = cleaned_log[1].split()
-                # params = []
                 log_template = ''
-                # blk = ''
 
                 for token in tokens:
                     if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk':
-                        # necessary?
-                        if token[:3] == 'blk':
-                            pass
-                            # blk = token
-
                         token = '<*>'
 
                     log_template += token + ' '
 
                 self.anonymized_data.append(log_template.strip())
+
+        # agregar los blks
+
 
         # with open(self.input_file, 'r') as log_file:
 
@@ -70,15 +66,15 @@ class LogParser():
 
     def tokenize(self):
         '''
-            After the data has been anonymized, this step takes care of separating it into 
-            collections which are formed based on the number of words and params (dynamic tokens) in 
+            After the data has been anonymized, this step takes care of separating it into
+            collections which are formed based on the number of words and params (dynamic tokens) in
             each log.
 
             Aditional data, namely the 'events' key is added to ease the categorization step.
         '''
         for idx, log in enumerate(self.anonymized_data):
             num_of_words = len(re.findall(self.WORD_REGEX, log))
-            num_of_params = len(re.findall(self.PARM_REGEX, log))
+            num_of_params = len(re.findall(self.PARAM_REGEX, log))
 
             key = f'{num_of_words}.{num_of_params}'  # Set key for that log -> 'w.p'
 

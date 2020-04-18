@@ -1,0 +1,1004 @@
+Starting Drain3 template miner
+Checking for saved state
+Restored 13 clusters with 393 messages
+Drain3 started with 'FILE' persistence, reading from std-in (input 'q' to finish)
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 96, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 16, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 97, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 98, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 13, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 14, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 13, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 14, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 15, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 15, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 19, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 20, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 21, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 99, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 100, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 17, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 7, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 101, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 102, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 103, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 16, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 16, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 17, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 17, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0007", "cluster_size": 4, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataTransfer: <*> block blk_-1608999687919862906 to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 8, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 104, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 18, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 18, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0011", "cluster_size": 3, "template_mined": "081109 <*> 19 INFO dfs.DataNode: <*> Starting thread to transfer block blk_-1608999687919862906 to <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0010", "cluster_size": 3, "template_mined": "081109 <*> 19 INFO dfs.FSNamesystem: BLOCK* ask <*> to replicate blk_-1608999687919862906 to datanode(s) <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 22, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 18, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 23, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 24, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 25, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 26, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 105, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 106, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 19, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 19, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 107, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 20, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 20, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 21, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 21, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 225, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 226, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 19, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 27, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 28, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 29, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 108, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 109, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 22, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 22, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 23, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 23, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0003", "cluster_size": 24, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: PacketResponder <*> for block <*> terminating", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0004", "cluster_size": 24, "template_mined": "081109 <*> <*> INFO dfs.DataNode$PacketResponder: Received block <*> of size <*> from <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0010", "cluster_size": 4, "template_mined": "081109 <*> 19 INFO dfs.FSNamesystem: BLOCK* ask <*> to replicate blk_-1608999687919862906 to datanode(s) <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 30, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 31, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 32, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 227, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 9, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 10, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 110, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 111, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 228, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 229, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 230, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0007", "cluster_size": 5, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataTransfer: <*> block blk_-1608999687919862906 to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0011", "cluster_size": 4, "template_mined": "081109 <*> 19 INFO dfs.DataNode: <*> Starting thread to transfer block blk_-1608999687919862906 to <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 33, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 34, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 112, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 11, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 113, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0007", "cluster_size": 6, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataTransfer: <*> block blk_-1608999687919862906 to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 231, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 232, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 233, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 234, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 235, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 236, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 237, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 238, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 239, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 240, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 241, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 242, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 243, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 244, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 245, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 246, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 247, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 248, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 249, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 250, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 251, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 252, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 253, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 254, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 255, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 256, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 257, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 258, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 259, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 260, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 261, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 262, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 263, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 264, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 265, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 266, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0011", "cluster_size": 5, "template_mined": "081109 <*> 19 INFO dfs.DataNode: <*> Starting thread to transfer block blk_-1608999687919862906 to <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0010", "cluster_size": 5, "template_mined": "081109 <*> 19 INFO dfs.FSNamesystem: BLOCK* ask <*> to replicate blk_-1608999687919862906 to datanode(s) <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 12, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 267, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 268, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 269, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 270, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 271, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 272, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 273, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 274, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 275, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 276, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 277, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 278, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 279, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 280, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 281, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 282, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 283, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 284, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 285, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 286, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 287, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 288, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 289, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 290, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 291, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 292, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 293, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 294, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 295, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 296, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 297, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 298, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 299, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 300, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 301, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 302, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 303, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 35, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 36, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 114, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 304, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 305, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 306, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 307, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 308, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 309, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 310, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 311, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 312, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 313, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 314, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 315, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 316, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 317, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 318, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 319, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 320, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 115, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 321, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 322, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 323, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 324, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 325, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 326, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 327, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 328, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 329, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 330, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 331, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 332, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 333, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 334, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 335, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 336, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 337, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 338, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 339, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 340, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 341, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 342, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 343, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 20, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 116, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 117, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 118, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 119, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 120, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 121, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 122, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 123, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 124, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 125, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 126, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 127, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 344, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 128, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 129, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 130, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 131, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 345, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 346, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 132, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 347, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 348, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 349, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 350, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 351, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 352, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 133, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 134, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 353, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 354, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 355, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 356, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 357, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 358, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 359, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 360, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 361, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 362, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 363, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 364, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 365, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 135, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 366, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 367, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 368, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 369, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 370, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 371, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 372, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 373, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 374, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 375, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 376, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 377, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 378, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 379, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 380, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 381, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 382, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 383, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 384, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 385, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 386, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 387, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 388, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 389, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 390, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 391, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 392, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0012", "cluster_size": 2, "template_mined": "081109 203530 19 INFO dfs.FSNamesystem: BLOCK* ask 10.251.31.5:50010 to replicate blk_-1608999687919862906 to datanode(s) 10.251.90.64:50010", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 21, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 22, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 23, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 24, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 25, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 26, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 27, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 28, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 29, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 30, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 136, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 137, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 138, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 139, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 140, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 141, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 142, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 143, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 393, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 394, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 144, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 145, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 146, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 147, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 148, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 149, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 150, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 151, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 395, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 396, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 152, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 153, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 154, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 155, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 156, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 157, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 158, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 159, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 160, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 161, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 162, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 163, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 397, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 398, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 164, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 165, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 166, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 167, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 168, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 169, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 170, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 171, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 172, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 399, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 173, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 174, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 175, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 176, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 177, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 178, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 179, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 180, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 181, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 182, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 400, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 183, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 184, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 401, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 402, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 403, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 185, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 404, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 186, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 405, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 406, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 407, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 408, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 409, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 410, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 187, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 411, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 188, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 189, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 412, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 413, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 414, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 415, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 416, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 417, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 418, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 419, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 420, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 421, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 422, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 423, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 424, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 425, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 426, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 427, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 190, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 428, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 429, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 430, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 431, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 432, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 433, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 434, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 435, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 436, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 437, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 438, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 439, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 440, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 441, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 442, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 443, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 444, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 445, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 446, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 447, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 448, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0013", "cluster_size": 2, "template_mined": "081109 203531 19 INFO dfs.DataNode: 10.251.31.5:50010 Starting thread to transfer block blk_-1608999687919862906 to 10.251.90.64:50010", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 31, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 32, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 33, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 34, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 35, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 36, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 37, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 38, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 39, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 40, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 41, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 42, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 43, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 44, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 45, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 46, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 47, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 48, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 49, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 50, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 51, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 52, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 53, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 54, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 55, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 56, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 57, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 191, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 192, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 193, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 194, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 195, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 196, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 197, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 198, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0006", "cluster_size": 13, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Received block blk_-1608999687919862906 src: <*> dest: <*> of size 91178", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 199, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 200, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 201, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 202, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 203, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 204, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 205, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 206, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 207, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 208, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 209, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 210, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 211, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 212, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 213, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 214, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 215, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 216, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 217, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 218, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 219, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 220, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 221, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 222, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 223, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 224, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 225, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 226, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 227, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 228, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 229, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 230, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 231, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 232, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 233, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 234, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 235, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 236, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 237, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 238, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 239, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 240, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 241, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 242, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 243, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 244, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 245, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 246, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 247, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 248, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 249, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 250, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 251, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 252, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 253, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 254, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 255, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 256, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 257, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 258, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 259, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 260, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 261, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 262, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 263, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 264, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 265, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 266, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 267, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 268, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 269, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 270, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 271, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 272, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 273, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 274, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 275, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 276, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 277, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 278, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 279, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 280, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 281, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 282, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 283, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 284, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 285, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 286, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 287, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 288, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 289, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 449, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 450, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 451, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 452, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 453, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0007", "cluster_size": 7, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataTransfer: <*> block blk_-1608999687919862906 to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 454, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 455, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 290, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 456, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 291, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 457, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 458, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 459, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 460, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 461, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 462, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 463, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 292, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 464, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 465, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 466, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 467, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 468, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 469, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 470, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 471, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 472, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 473, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 474, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 475, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 476, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 477, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0005", "cluster_size": 37, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 58, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 59, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 60, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 61, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 62, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 63, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 64, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 65, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 66, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 67, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 68, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 69, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 70, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 71, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 72, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 73, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 74, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 75, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 76, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 77, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 78, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 79, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 80, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 81, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 82, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 83, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 84, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 85, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 86, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 87, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 88, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 89, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 90, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 91, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 92, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 93, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 94, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 95, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 96, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 293, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 294, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 295, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 296, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 297, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 298, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 299, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 300, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 301, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 302, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 303, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 304, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 305, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 306, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 307, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 308, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 309, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 310, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 311, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 312, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 313, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 314, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 315, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 316, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 317, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 318, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 319, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 320, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 321, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 322, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 323, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 324, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 325, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 326, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 327, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 328, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 329, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 330, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 331, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 332, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 333, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 334, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 335, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 336, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 337, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 338, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 339, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 340, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 341, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 342, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 343, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 344, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 345, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 346, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 347, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 348, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 349, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 350, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 351, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 352, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 353, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 354, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 355, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 356, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 357, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 358, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 359, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 360, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 361, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 362, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 363, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 364, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 365, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 366, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 367, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 368, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 369, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 370, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 371, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 372, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 373, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 374, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 375, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 376, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 377, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 378, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 379, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 478, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 479, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 480, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 481, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 482, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 380, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 483, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 484, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 485, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 486, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 381, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 487, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 488, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 489, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 490, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 491, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 382, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 492, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 493, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 383, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 494, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 495, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 496, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 497, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 498, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 499, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 500, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 501, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 502, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 503, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 384, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 504, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 505, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 506, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 507, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 508, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 509, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 385, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 97, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 98, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 99, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 100, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 101, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 102, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 103, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 104, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 105, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 106, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 107, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 108, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 109, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 110, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 111, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 112, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 113, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 114, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 115, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 116, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 117, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 118, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 119, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 120, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 121, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 122, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 123, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 124, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 125, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 126, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 127, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 128, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 129, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 130, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 131, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 132, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 133, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 134, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 135, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 136, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 137, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 138, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 139, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 140, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 141, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 142, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 143, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 386, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 387, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 388, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 389, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 390, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 391, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 392, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 393, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 394, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 395, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 396, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 397, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 398, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 399, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 400, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 401, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 402, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 403, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 404, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 405, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 406, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 407, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 408, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 409, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 410, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 411, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 412, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 413, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 414, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 415, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 416, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 417, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 418, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 419, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 420, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 421, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 422, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 423, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 424, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 425, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 426, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 427, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 428, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 429, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 430, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 431, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 432, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 433, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 434, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 435, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 436, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 437, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 438, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 439, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 440, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 441, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 442, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 443, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 444, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 445, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 446, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 447, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 448, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 449, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 450, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 451, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 452, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 453, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 454, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 455, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 456, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 457, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 458, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 459, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 460, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 461, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 462, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 463, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 464, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 465, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 466, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 467, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 468, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 469, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 470, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 471, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 472, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 473, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 474, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 475, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 476, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 477, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 478, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 479, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 480, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 481, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 482, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 483, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 484, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 485, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 486, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 487, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 488, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 489, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 490, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 491, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 492, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 493, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 494, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 495, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 496, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 497, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 498, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 499, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 500, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 501, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 502, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 503, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 504, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 505, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 506, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 507, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 508, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 509, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 510, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 510, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 511, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 512, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 511, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 513, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 514, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 515, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 516, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 512, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 517, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 518, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 513, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 514, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 515, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 519, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 516, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 520, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 517, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 521, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 522, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 518, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 523, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 524, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 525, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 526, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 527, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 528, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 519, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 520, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 144, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 145, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 146, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 147, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 148, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 149, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 150, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 151, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 152, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 153, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 154, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 155, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 156, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 157, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 158, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 159, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 160, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 161, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 162, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 163, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 164, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 165, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 166, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 167, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 168, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 169, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 170, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 171, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 172, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 173, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 174, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 175, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 176, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 177, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 178, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 179, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 180, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 181, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 182, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 183, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 184, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 185, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 186, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 187, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 188, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 189, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 190, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 191, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0002", "cluster_size": 192, "template_mined": "081109 <*> <*> INFO dfs.FSNamesystem: BLOCK* NameSystem.allocateBlock: <*> <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 521, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 522, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 529, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 523, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 524, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 525, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 526, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 527, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 528, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 529, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0009", "cluster_size": 530, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: <*> Served block <*> to <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 530, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 531, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 532, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 533, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 534, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 535, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 536, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 537, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 538, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 539, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 540, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 541, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 542, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 543, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 544, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 545, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 546, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 547, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 548, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 549, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}
+{"change_type": "none", "cluster_id": "A0001", "cluster_size": 550, "template_mined": "081109 <*> <*> INFO dfs.DataNode$DataXceiver: Receiving block <*> src: <*> dest: <*>", "cluster_count": 13}

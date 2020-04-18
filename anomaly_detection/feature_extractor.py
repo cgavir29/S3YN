@@ -3,25 +3,24 @@ from log_parser import LogParser
 
 class FeatureExtractor():
     def __init__(self, input_file):
-
-        self.logParser = LogParser(input_file)
-        self.logSequences = {}
+        self.log_parser = LogParser(input_file)
+        self.log_sequences = {}
 
     def extract(self):
-        logs, events = self.logParser.parse()
+        events, logs = self.log_parser.parse() # events, blk_events
 
         for log in logs:
             blk = log['blk']
-            eventIndex = log['Event']
+            event_index = log['event']
 
-            if blk not in self.logSequences:
-                self.logSequences[blk] = []
+            if blk not in self.log_sequences:
+                self.log_sequences[blk] = []
 
                 for e in events:
-                    self.logSequences[blk].append(0)
+                    self.log_sequences[blk].append(0)
 
-                self.logSequences[blk][eventIndex] = 1
+                self.log_sequences[blk][event_index] = 1
             else:
-                self.logSequences[blk][eventIndex] += 1
+                self.log_sequences[blk][event_index] += 1
 
-        return self.logSequences
+        return self.log_sequences
