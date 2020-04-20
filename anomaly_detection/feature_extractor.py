@@ -7,10 +7,12 @@ class FeatureExtractor():
     def extract(self):
         self.group_events_by_blk()
 
-        for blk in self.log_sequences:
+        return self.log_sequences
+
+        '''for blk in self.log_sequences:
             frequency_of_events = self.log_sequences[blk] 
                 
-            print('For block ' + blk + ' the event vector is ' + str(frequency_of_events))
+            print('For block ' + blk + ' the event vector is ' + str(frequency_of_events))'''
 
     def group_events_by_blk(self):
         num_events = len(self.events)
