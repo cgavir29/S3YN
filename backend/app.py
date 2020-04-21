@@ -1,4 +1,6 @@
 from flask import Flask, flash, request, redirect, url_for, jsonify
+from anomaly_detection.feature_extractor import FeatureExtractor
+from anomaly_detection.log_parser import LogParser
 from flask_cors import CORS
 from flask_mongoengine import MongoEngine
 
@@ -11,10 +13,6 @@ import config
 import requests
 import os
 import sys
-sys.path.insert(1, '../anomaly_detection')
-
-from log_parser import LogParser
-from feature_extractor import FeatureExtractor
 
 UPLOAD_FOLDER = './uploaded_files'
 ALLOWED_EXTENSIONS = {'txt', 'csv', 'log'}
@@ -27,6 +25,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 db = MongoEngine(app)
 CORS(app)
 
+
 @app.route('/login', methods=['POST'])
 def login():
     email = request.json.get('email')
@@ -37,6 +36,7 @@ def login():
         return jsonify({'msg': 'Incorrect credentials'}), 404
 
     return jsonify({'user': user.to_json()})
+
 
 @app.route('/register', methods=['POST'])
 def register():
@@ -52,44 +52,51 @@ def register():
 
     return user.to_json()
 
+
 @app.route('/users/<user_id>/files', methods=['POST'])
-def uploaded_file(user_id):    
-    
+def uploaded_file(user_id):
+
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
-        
+
     file = request.files['file']
-        
-    if file.filename == '': 
+
+    if file.filename == '':
         flash('No selected file')
         return redirect(request.url)
-        
-    user_id = request.json.get('user_id')    
-    file.save(os.path.join(app.config['UPLOAD_FOLDER'], user_id + '_' +file.filename))
 
-    return jsonify({'response': 'File uploaded.'})   
+    user_id = request.json.get('user_id')
+    file.save(os.path.join(
+        app.config['UPLOAD_FOLDER'], user_id + '_' + file.filename))
+
+    return jsonify({'response': 'File uploaded.'})
+
 
 @app.route('/users/<user_id>/files/<file_name>', methods=['GET'])
 def show_file(user_id, file_name):
-    
+
     lines = []
 
     with open('./uploaded_files/' + str(user_id) + '_' + str(file_name), 'r') as log_file:
-        for line in log_file.readlines(): lines.append(line)
-    
+        for line in log_file.readlines():
+            lines.append(line)
+
     return jsonify(lines)
+
 
 @app.route('/users/<user_id>/files/<file_name>/preprocess', methods=['GET'])
 def preprocess(user_id, file_name):
-    
-    parser = LogParser('./uploaded_files/' + str(user_id) + '_' + str(file_name))
+
+    parser = LogParser('./uploaded_files/' +
+                       str(user_id) + '_' + str(file_name))
     events, blk_events = parser.parse()
 
     extractor = FeatureExtractor(events, blk_events)
     features_vector = extractor.extract()
 
-    return jsonify({'events': events, 'features': features_vector}) 
+    return jsonify({'events': events, 'features': features_vector})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
