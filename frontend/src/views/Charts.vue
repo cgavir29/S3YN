@@ -1,21 +1,21 @@
 <template>
   <div class="container has-text-centered">
     <h1 class="title">Charts</h1>
-    <ParserEvents />
+    <LogParserResults />
     <br />
-    <ExtractionFeatures />
+    <FeatureExtractorResults />
   </div>
 </template>
 
 <script>
-import ParserEvents from "@/components/ParserEvents.vue";
-import ExtractionFeatures from "@/components/ExtractionFeatures.vue";
+import LogParserResults from "@/components/LogParserResults.vue";
+import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
 
 export default {
   name: "Charts",
   components: {
-    ParserEvents,
-    ExtractionFeatures
+    LogParserResults,
+    FeatureExtractorResults
   }
 };
 </script>

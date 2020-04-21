@@ -76,9 +76,18 @@
             </div>
 
             <div class="navbar-item" v-else>
-              <router-link class="navbar-item" :to="{ name: 'Home' }">
-                <a href class="button" @click="logoutUser">Logout</a>
-              </router-link>
+              <span class="navbar-item">
+                <router-link class="navbar-item" :to="{ name: 'Home' }">
+                  <a href class="button is-success is-inverted" @click="logoutUser">
+                    <span class="icon">
+                      <i class="fas fa-sign-out-alt"></i>
+                    </span>
+                    <span>
+                      Sign Out
+                    </span>
+                  </a>
+                </router-link>
+              </span>
             </div>
           </div>
         </div>

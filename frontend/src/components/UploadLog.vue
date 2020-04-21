@@ -19,15 +19,15 @@
         <button
           class="delete is-small"
           type="button"
-          @click="deleteDropFile(index)"
+          @click="deleteFile(index)"
         ></button>
       </span>
     </div>
 
-    <b-button type="is-warning" @click="evaluatePatterns()"
+    <!-- <b-button type="is-warning" @click="evaluatePatterns()"
       >Evaluate Patterns</b-button
-    >|
-    <b-button type="is-twitter">Save Results</b-button>
+    >| -->
+    <b-button type="is-warning">Upload</b-button>
   </div>
 </template>
 
@@ -39,38 +39,38 @@ export default {
     };
   },
   methods: {
-    evaluatePatterns() {
-      if (this.dropFiles.length) {
-        console.log("leyendo");
-        const reader = new FileReader();
-        const a = new Promise((resolve, reject) => {
-          reader.onload = event => resolve(event.target.result);
-          reader.onerror = error => reject(error);
-          reader.readAsText(this.dropFiles[0]);
-        });
+    // evaluatePatterns() {
+    //   if (this.dropFiles.length) {
+    //     console.log("leyendo");
+    //     const reader = new FileReader();
+    //     const a = new Promise((resolve, reject) => {
+    //       reader.onload = event => resolve(event.target.result);
+    //       reader.onerror = error => reject(error);
+    //       reader.readAsText(this.dropFiles[0]);
+    //     });
 
-        a.then(res => {
-          this.$buefy.dialog.alert({
-            title: "Uploaded Log",
-            message: res,
-            type: "is-info",
-            confirmText: "Ok"
-          });
-        });
-      } else {
-        this.$buefy.dialog.alert({
-          title: "Error",
-          message: "Please upload a file first.",
-          type: "is-danger",
-          hasIcon: true,
-          icon: "times-circle",
-          iconPack: "fa",
-          ariaRole: "alertdialog",
-          ariaModal: true
-        });
-      }
-    },
-    deleteDropFile(index) {
+    //     a.then(res => {
+    //       this.$buefy.dialog.alert({
+    //         title: "Uploaded Log",
+    //         message: res,
+    //         type: "is-info",
+    //         confirmText: "Ok"
+    //       });
+    //     });
+    //   } else {
+    //     this.$buefy.dialog.alert({
+    //       title: "Error",
+    //       message: "Please upload a file first.",
+    //       type: "is-danger",
+    //       hasIcon: true,
+    //       icon: "times-circle",
+    //       iconPack: "fa",
+    //       ariaRole: "alertdialog",
+    //       ariaModal: true
+    //     });
+    //   }
+    // },
+    deleteFile(index) {
       this.dropFiles.splice(index, 1);
     }
   }
