@@ -33,7 +33,7 @@ def login():
 
     user = User.check_credentials(email, password)
     if not user:
-        return jsonify({'msg': 'Incorrect credentials'}), 404
+        return jsonify({'msg': 'Incorrect email or password'}), 404
 
     return jsonify({'user': user.to_json()})
 
