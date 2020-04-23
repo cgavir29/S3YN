@@ -33,43 +33,13 @@
 
 <script>
 export default {
+  name: "LogUpload",
   data() {
     return {
       dropFiles: []
     };
   },
   methods: {
-    // evaluatePatterns() {
-    //   if (this.dropFiles.length) {
-    //     console.log("leyendo");
-    //     const reader = new FileReader();
-    //     const a = new Promise((resolve, reject) => {
-    //       reader.onload = event => resolve(event.target.result);
-    //       reader.onerror = error => reject(error);
-    //       reader.readAsText(this.dropFiles[0]);
-    //     });
-
-    //     a.then(res => {
-    //       this.$buefy.dialog.alert({
-    //         title: "Uploaded Log",
-    //         message: res,
-    //         type: "is-info",
-    //         confirmText: "Ok"
-    //       });
-    //     });
-    //   } else {
-    //     this.$buefy.dialog.alert({
-    //       title: "Error",
-    //       message: "Please upload a file first.",
-    //       type: "is-danger",
-    //       hasIcon: true,
-    //       icon: "times-circle",
-    //       iconPack: "fa",
-    //       ariaRole: "alertdialog",
-    //       ariaModal: true
-    //     });
-    //   }
-    // },
     deleteFile(index) {
       this.dropFiles.splice(index, 1);
     }

@@ -78,7 +78,11 @@
             <div class="navbar-item" v-else>
               <span class="navbar-item">
                 <router-link class="navbar-item" :to="{ name: 'Home' }">
-                  <a href class="button is-success is-inverted" @click="logoutUser">
+                  <a
+                    href
+                    class="button is-success is-inverted"
+                    @click="this.clearAll"
+                  >
                     <span class="icon">
                       <i class="fas fa-sign-out-alt"></i>
                     </span>
@@ -117,7 +121,12 @@ export default {
     ...mapGetters(["getUser"])
   },
   methods: {
-    ...mapActions(["logoutUser"])
+    ...mapActions(["logoutUser", "clearLogs", "clearAnomalyDetectionData"]),
+    clearAll() {
+      this.logoutUser();
+      this.clearLogs();
+      this.clearAnomalyDetectionData();
+    }
   }
 };
 </script>

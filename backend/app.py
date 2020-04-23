@@ -14,18 +14,19 @@ import requests
 import os
 import sys
 
-UPLOAD_FOLDER = './uploaded_files'
+UPLOADS_FOLDER = './uploaded_files'
 ALLOWED_EXTENSIONS = {'txt', 'csv', 'log'}
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config['MONGODB_HOST'] = config.DB_URI
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['UPLOADS_FOLDER'] = UPLOADS_FOLDER
 
 db = MongoEngine(app)
 CORS(app)
 
 
+# --------------------------------------------------------------------------------
 @app.route('/login', methods=['POST'])
 def login():
     email = request.json.get('email')
@@ -35,7 +36,7 @@ def login():
     if not user:
         return jsonify({'msg': 'Incorrect email or password'}), 404
 
-    return jsonify({'user': user.to_json()})
+    return jsonify({'user': user})
 
 
 @app.route('/register', methods=['POST'])
@@ -50,7 +51,18 @@ def register():
     except:
         return jsonify({'msg': 'Email already taken'}), 500
 
-    return user.to_json()
+    return jsonify({'user': user})
+
+
+# --------------------------------------------------------------------------------
+@app.route('/users/<user_id>/files', methods=['GET'])
+def get_files(user_id):
+    try:
+        logs = os.listdir(f'{UPLOADS_FOLDER}/{user_id}')
+
+        return jsonify({'logs': logs})
+    except FileNotFoundError:
+        return jsonify({'msg': "You haven't uploaded any logs yet."}), 404
 
 
 @app.route('/users/<user_id>/files', methods=['POST'])
@@ -68,28 +80,26 @@ def uploaded_file(user_id):
 
     user_id = request.json.get('user_id')
     file.save(os.path.join(
-        app.config['UPLOAD_FOLDER'], user_id + '_' + file.filename))
+        app.config['UPLOADS_FOLDER'], user_id + '_' + file.filename))
 
     return jsonify({'response': 'File uploaded.'})
 
 
-@app.route('/users/<user_id>/files/<file_name>', methods=['GET'])
-def show_file(user_id, file_name):
+@app.route('/users/<user_id>/files/<filename>', methods=['GET'])
+def show_file(user_id, filename):
 
     lines = []
 
-    with open('./uploaded_files/' + str(user_id) + '_' + str(file_name), 'r') as log_file:
+    with open('./uploaded_files/' + str(user_id) + '_' + str(filename), 'r') as log_file:
         for line in log_file.readlines():
             lines.append(line)
 
     return jsonify(lines)
 
 
-@app.route('/users/<user_id>/files/<file_name>/preprocess', methods=['GET'])
-def preprocess(user_id, file_name):
-
-    parser = LogParser('./uploaded_files/' +
-                       str(user_id) + '_' + str(file_name))
+@app.route('/users/<user_id>/files/<filename>/preprocess', methods=['GET'])
+def preprocess(user_id, filename):
+    parser = LogParser(f'{UPLOADS_FOLDER}/{user_id}/{filename}')
     events, blk_events = parser.parse()
 
     extractor = FeatureExtractor(events, blk_events)
@@ -98,5 +108,6 @@ def preprocess(user_id, file_name):
     return jsonify({'events': events, 'features': features_vector})
 
 
+# --------------------------------------------------------------------------------
 if __name__ == '__main__':
     app.run(debug=True)

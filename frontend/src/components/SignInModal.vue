@@ -49,7 +49,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["logUser"]),
+    ...mapActions(["logUser", "fetchLogs"]),
     handleSubmit() {
       if (this.user.email === "" || this.user.password === "") return;
 
