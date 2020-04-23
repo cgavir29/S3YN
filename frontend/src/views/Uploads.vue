@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import LogUpload from '@/components/LogUpload.vue'
+import LogUpload from "@/components/LogUpload.vue";
 
 export default {
-  name: 'Uploads',
+  name: "Uploads",
   components: {
     LogUpload
   }
-}
+};
 </script>

@@ -1,47 +1,52 @@
 <template>
   <div class="container has-text-centered">
-    <b-field>
-      <b-upload v-model="dropFiles" multiple drag-drop>
-        <section class="section">
-          <div class="content has-text-centered">
-            <p>
-              <b-icon icon="upload" size="is-large"></b-icon>
-            </p>
-            <p>Drop your files here or click to upload</p>
-          </div>
-        </section>
-      </b-upload>
-    </b-field>
-
-    <div class="tags has-text-centered">
-      <span v-for="(file, index) in dropFiles" :key="index" class="tag is-info">
-        {{ file.name }}
-        <button
-          class="delete is-small"
-          type="button"
-          @click="deleteFile(index)"
-        ></button>
-      </span>
+    <div class="large-12 medium-12 small-12 cell">
+      <label
+        >File
+        <input
+          type="file"
+          id="file"
+          ref="file"
+          v-on:change="handleFileUpload()"
+        />
+      </label>
+      <b-button class="is-warning" @click="runUploadFile">Upload</b-button>
     </div>
-
-    <!-- <b-button type="is-warning" @click="evaluatePatterns()"
-      >Evaluate Patterns</b-button
-    >| -->
-    <b-button type="is-warning">Upload</b-button>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 export default {
   name: "LogUpload",
   data() {
     return {
-      dropFiles: []
+      files: [],
+      file: ""
     };
   },
+  computed: {
+    ...mapGetters(["getUser"])
+  },
   methods: {
+    ...mapActions(["uploadFile"]),
+    runUploadFile() {
+      if (this.file == "") {
+        alert("Please upload a file first.");
+        return;
+      }
+
+      let formData = new FormData();
+      formData.append("file", this.file);
+
+      this.uploadFile({ userId: this.getUser._id.$oid, formData: formData });
+    },
+    handleFileUpload() {
+      this.file = this.$refs.file.files[0];
+    },
     deleteFile(index) {
-      this.dropFiles.splice(index, 1);
+      this.files.splice(index, 1);
     }
   }
 };

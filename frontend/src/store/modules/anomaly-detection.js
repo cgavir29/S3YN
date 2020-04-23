@@ -22,6 +22,16 @@ const mutations = {
 };
 
 const actions = {
+  uploadFile({ commit }, { userId, formData }) {
+    axios
+      .post("/users/" + userId + "/files", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data"
+        }
+      })
+      .then(res => alert(res.data.msg))
+      .catch(err => alert(err.response.data.msg));
+  },
   clearLogs({ commit }) {
     commit("clearLogs");
   },
@@ -33,7 +43,7 @@ const actions = {
     axios
       .get("/users/" + userId + "/files")
       .then(res => {
-        var logs = [];
+        let logs = [];
         res.data.logs.forEach(function (item, index) {
           logs.push({
             id: index,
@@ -51,7 +61,7 @@ const actions = {
     axios
       .get("/users/" + userId + "/files/" + filename + "/preprocess")
       .then(res => {
-        var prettyEvents = [];
+        let prettyEvents = [];
         res.data.events.forEach(function (item, index) {
           prettyEvents.push({
             id: index + 1,
@@ -59,8 +69,8 @@ const actions = {
           });
         });
 
-        var idx = 1;
-        var prettyFeatures = [];
+        let idx = 1;
+        let prettyFeatures = [];
         for (let [key, value] of Object.entries(res.data.features)) {
           prettyFeatures.push({
             id: idx,

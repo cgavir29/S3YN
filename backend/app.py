@@ -67,22 +67,17 @@ def get_files(user_id):
 
 @app.route('/users/<user_id>/files', methods=['POST'])
 def uploaded_file(user_id):
-
     if 'file' not in request.files:
-        flash('No file part')
-        return redirect(request.url)
+        return jsonify({'msg': 'Something bad happened...'}), 400
+
+    user_folder = f'{UPLOADS_FOLDER}/{user_id}'
+    if not os.path.exists(user_folder):
+        os.makedirs(user_folder)
 
     file = request.files['file']
+    file.save(os.path.join(f'{user_folder}/{file.filename}'))
 
-    if file.filename == '':
-        flash('No selected file')
-        return redirect(request.url)
-
-    user_id = request.json.get('user_id')
-    file.save(os.path.join(
-        app.config['UPLOADS_FOLDER'], user_id + '_' + file.filename))
-
-    return jsonify({'response': 'File uploaded.'})
+    return jsonify({'msg': 'File uploaded.'})
 
 
 @app.route('/users/<user_id>/files/<filename>', methods=['GET'])
