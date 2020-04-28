@@ -1,8 +1,9 @@
 from flask import Flask, flash, request, redirect, url_for, jsonify
-from anomaly_detection.feature_extractor import FeatureExtractor
-from anomaly_detection.log_parser import LogParser
 from flask_cors import CORS
 from flask_mongoengine import MongoEngine
+
+from anomaly_detection.feature_extractor import FeatureExtractor
+from anomaly_detection.log_parser import LogParser
 
 from models.result import Result
 from models.user import User
@@ -10,9 +11,9 @@ from models.user import User
 import auth
 import config
 
-import requests
 import os
-import sys
+# import requests
+# import sys
 
 UPLOADS_FOLDER = './uploaded_files'
 ALLOWED_EXTENSIONS = {'txt', 'csv', 'log'}
@@ -82,14 +83,17 @@ def uploaded_file(user_id):
 
 @app.route('/users/<user_id>/files/<filename>', methods=['GET'])
 def show_file(user_id, filename):
+    try:
+        with open(f'{UPLOADS_FOLDER}/{user_id}/{filename}') as log_file:
+            lines = []
 
-    lines = []
+            for idx, line in enumerate(log_file):
+                if idx < 10:
+                    lines.append(line)
 
-    with open('./uploaded_files/' + str(user_id) + '_' + str(filename), 'r') as log_file:
-        for line in log_file.readlines():
-            lines.append(line)
-
-    return jsonify(lines)
+        return jsonify({'lines': lines})
+    except:
+        return jsonify({'msg': 'We were unable to find that file'}), 404
 
 
 @app.route('/users/<user_id>/files/<filename>/preprocess', methods=['GET'])

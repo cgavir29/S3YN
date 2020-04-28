@@ -21,6 +21,22 @@
         </b-tab-item>
       </b-tabs>
 
+      <b-button class="is-info" @click="isLogPreviewModalActive = true">
+        Preview
+      </b-button>
+      <b-modal
+        :active.sync="isLogPreviewModalActive"
+        has-modal-card
+        trap-focus
+        :destroy-on-hide="false"
+        aria-role="dialog"
+        aria-modal
+      >
+        <div v-if="selected">
+          <LogPreview v-bind:logFilename="selected.filename" />
+        </div>
+      </b-modal>
+      &nbsp;
       <b-button class="is-warning" @click="runFetchAnomalyDetection">
         Detect Anomalies
       </b-button>
@@ -39,12 +55,17 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import LogPreview from "@/components/LogPreview.vue";
 
 export default {
-  name: "LogsList",
+  name: "LogList",
+  components: {
+    LogPreview
+  },
   data() {
     return {
-      selected: "",
+      isLogPreviewModalActive: false,
+      selected: null,
       columns: [
         {
           field: "id",

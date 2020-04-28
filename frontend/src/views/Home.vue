@@ -5,19 +5,19 @@
       Sign in to start detecting
     </div>
     <div v-else>
-      <LogsList />
+      <LogList />
     </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
-import LogsList from "@/components/LogsList.vue";
+import LogList from "@/components/LogList.vue";
 
 export default {
   name: "Home",
   components: {
-    LogsList
+    LogList
   },
   computed: {
     ...mapGetters(["getUser"])
