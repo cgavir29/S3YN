@@ -9,6 +9,7 @@ class IDF():
         self.N = 0
         self.aux = 0;
 
+    # --------------------------------------------------------------------------------------------
     def getIDF(self):
         self.calculateNT()
 
@@ -17,7 +18,12 @@ class IDF():
 
         return self.IDFs
 
+    # --------------------------------------------------------------------------------------------
     def calculateNT(self):
+        '''
+            N = Takes the total number of log sequences extracted from the Feature Extractor.
+            NTs = Calculates the number of sequences where the event T appears.
+        '''
         self.N = len(self.log_sequences)
 
         for blk in self.log_sequences:
