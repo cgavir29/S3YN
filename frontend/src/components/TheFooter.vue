@@ -2,7 +2,7 @@
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
     <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
+      <!-- <div class="container">
         <ul>
           <router-link
             tag="li"
@@ -21,7 +21,7 @@
             <a>Charts</a>
           </router-link>
         </ul>
-      </div>
+      </div> -->
     </nav>
   </div>
 </template>

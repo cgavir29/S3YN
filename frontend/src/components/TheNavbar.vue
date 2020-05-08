@@ -8,13 +8,25 @@
             :to="{ name: 'Home' }"
             >S3YN</router-link
           >
-          <!-- <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>-->
         </div>
         <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-start" v-if="this.getUser">
+            <router-link
+              class="navbar-item "
+              :to="{ name: 'Uploads' }"
+              active-class="is-active"
+              exact
+              >Upload Logs</router-link
+            >
+            <router-link
+              class="navbar-item"
+              :to="{ name: 'Charts' }"
+              active-class="is-active"
+              exact
+              >Charts</router-link
+            >
+          </div>
+
           <div class="navbar-end">
             <router-link
               class="navbar-item"

@@ -3,13 +3,15 @@ import axios from "axios";
 const state = {
   logs: null,
   events: null,
-  features: null
+  features: null,
+  anomalies: null
 };
 
 const getters = {
   getLogs: state => state.logs,
   getEvents: state => state.events,
-  getFeatures: state => state.features
+  getFeatures: state => state.features,
+  getAnomalies: state => state.anomalies
 };
 
 const mutations = {
@@ -18,7 +20,9 @@ const mutations = {
   setEvents: (state, events) => (state.events = events),
   clearEvents: state => (state.events = null),
   setFeatures: (state, features) => (state.features = features),
-  clearFeatures: state => (state.features = null)
+  clearFeatures: state => (state.features = null),
+  setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
+  clearAnomalies: state => (state.anomalies = null)
 };
 
 const actions = {
@@ -38,6 +42,7 @@ const actions = {
   clearAnomalyDetectionData({ commit }) {
     commit("clearEvents");
     commit("clearFeatures");
+    commit("clearAnomalies");
   },
   fetchLogs({ commit }, { userId }) {
     axios
@@ -59,29 +64,45 @@ const actions = {
   },
   fetchAnomalyDetection({ commit }, { userId, filename }) {
     axios
-      .get("/users/" + userId + "/files/" + filename + "/preprocess")
+      .get("/users/" + userId + "/files/" + filename + "/detect")
       .then(res => {
-        let prettyEvents = [];
+        // Add the 'id' field to each part of the response, specifically 'events', 'features' and
+        // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
+
+        let eventsWithId = [];
         res.data.events.forEach(function (item, index) {
-          prettyEvents.push({
+          eventsWithId.push({
             id: index + 1,
             event: item
           });
         });
 
         let idx = 1;
-        let prettyFeatures = [];
-        for (let [key, value] of Object.entries(res.data.features)) {
-          prettyFeatures.push({
+        let featuresWithId = [];
+        for (let [blk, feature] of Object.entries(res.data.features)) {
+          featuresWithId.push({
             id: idx,
-            blk: key,
-            feature: value
+            blk: blk,
+            feature: feature
           });
+
           idx++;
         }
 
-        commit("setEvents", prettyEvents);
-        commit("setFeatures", prettyFeatures);
+        let idx2 = 1;
+        let anomaliesWithId = [];
+        for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
+          anomaliesWithId.push({
+            id: idx,
+            blk: blk,
+            anomaly: anomaly
+          });
+
+          idx2++;
+        }
+        commit("setEvents", eventsWithId);
+        commit("setFeatures", featuresWithId);
+        commit("setAnomalies", anomaliesWithId);
       })
       .catch(err => console.log(err));
   }
