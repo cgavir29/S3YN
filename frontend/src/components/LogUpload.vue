@@ -1,17 +1,15 @@
 <template>
   <div class="container has-text-centered">
     <div class="large-12 medium-12 small-12 cell">
-      <label
-        >File
-        <input
-          type="file"
-          id="file"
-          ref="file"
-          v-on:change="handleFileUpload()"
-        />
-      </label>
-      <b-button class="is-warning" @click="runUploadFile">Upload</b-button>
+      <input
+        type="file"
+        id="file"
+        ref="file"
+        v-on:change="handleFileUpload()"
+      />
     </div>
+    <br />
+    <b-button class="is-warning" @click="runUploadFile">Upload</b-button>
   </div>
 </template>
 

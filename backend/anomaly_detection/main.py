@@ -1,6 +1,7 @@
 from log_parser import LogParser
 from feature_extractor import FeatureExtractor
 from clustering import Clustering
+from idf import IDF
 
 parser = LogParser('HDFS_1K.log')
 events, log_sequences = parser.parse()

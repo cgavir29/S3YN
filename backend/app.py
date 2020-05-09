@@ -12,8 +12,6 @@ import auth
 import config
 
 import os
-# import requests
-# import sys
 
 UPLOADS_FOLDER = './uploaded_files'
 ALLOWED_EXTENSIONS = {'txt', 'csv', 'log'}
@@ -39,7 +37,7 @@ def login():
 
     return jsonify({'user': user})
 
-
+# --------------------------------------------------------------------------------
 @app.route('/register', methods=['POST'])
 def register():
     try:
@@ -54,7 +52,6 @@ def register():
 
     return jsonify({'user': user})
 
-
 # --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/files', methods=['GET'])
 def get_files(user_id):
@@ -65,7 +62,7 @@ def get_files(user_id):
     except FileNotFoundError:
         return jsonify({'msg': "You haven't uploaded any logs yet."}), 404
 
-
+# --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/files', methods=['POST'])
 def uploaded_file(user_id):
     if 'file' not in request.files:
@@ -80,7 +77,7 @@ def uploaded_file(user_id):
 
     return jsonify({'msg': 'File uploaded.'})
 
-
+# --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/files/<filename>', methods=['GET'])
 def show_file(user_id, filename):
     try:
@@ -95,8 +92,8 @@ def show_file(user_id, filename):
     except:
         return jsonify({'msg': 'We were unable to find that file'}), 404
 
-
-@app.route('/users/<user_id>/files/<filename>/preprocess', methods=['GET'])
+# --------------------------------------------------------------------------------
+@app.route('/users/<user_id>/files/<filename>/detect', methods=['GET'])
 def preprocess(user_id, filename):
     parser = LogParser(f'{UPLOADS_FOLDER}/{user_id}/{filename}')
     events, blk_events = parser.parse()
@@ -104,7 +101,11 @@ def preprocess(user_id, filename):
     extractor = FeatureExtractor(events, blk_events)
     features_vector = extractor.extract()
 
-    return jsonify({'events': events, 'features': features_vector})
+    return jsonify({
+        'events': events,
+        'features': features_vector,
+        'anomalies': []
+    })
 
 
 # --------------------------------------------------------------------------------
