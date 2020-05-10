@@ -7,6 +7,7 @@ from anomaly_detection.log_parser import LogParser
 
 from models.result import Result
 from models.user import User
+from models.cluster import Cluster
 
 import auth
 import config
