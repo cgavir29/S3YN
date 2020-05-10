@@ -5,8 +5,8 @@ from flask_mongoengine import MongoEngine
 from anomaly_detection.feature_extractor import FeatureExtractor
 from anomaly_detection.log_parser import LogParser
 
-from models.result import Result
 from models.user import User
+from models.result import Result
 from models.cluster import Cluster
 
 import auth
