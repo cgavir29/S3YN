@@ -1,28 +1,38 @@
+import math
+
 class FeatureExtractor():
-    def __init__(self, events, blk_events):
-        self.blk_events = blk_events
+    def __init__(self, log_sequences, events):
+        self.log_sequences = log_sequences
         self.events = events
-        self.log_sequences = {}
+        self.events_idf_value = []
 
     def extract(self):
-        self.group_events_by_blk()
+        self.calculate_idf()
+        self.generate_features_vector()
 
         return self.log_sequences
+        
+    def calculate_idf(self):       
+        log_sequence_ids = list(self.log_sequences.keys())
+        num_log_sequences = len(log_sequence_ids)
 
-        # for blk in self.log_sequences:
-        #     frequency_of_events = self.log_sequences[blk] 
-                
-        #     print('For block ' + blk + ' the event vector is ' + str(frequency_of_events))
+        for event_index in range(len(self.events)):
+            num_event_appearances = 0
+    
+            for log_sequence_id in log_sequence_ids:
+                if self.log_sequences[log_sequence_id]['Representative Log Sequence'][event_index] == 1: num_event_appearances += 1
+            
+            self.events_idf_value.append(math.log(num_log_sequences/num_event_appearances))
 
-    def group_events_by_blk(self):
-        num_events = len(self.events)
+    def generate_features_vector(self):
+        log_sequence_ids = list(self.log_sequences.keys())
 
-        for blk_event in self.blk_events:
-            blk = blk_event[0]
-            event_index = blk_event[1]
+        for log_sequence_id in log_sequence_ids:
+            features_vector = [0] * len(self.events)
+            
+            representative_log_sequence = self.log_sequences[log_sequence_id]['Representative Log Sequence']
+            for event_index in range(len(representative_log_sequence)):
+                if representative_log_sequence[event_index] == 1:
+                    features_vector[event_index] = self.events_idf_value[event_index]
 
-            if blk not in self.log_sequences:
-                self.log_sequences[blk] = [0] * num_events
-                self.log_sequences[blk][event_index] = 1
-            else:
-                self.log_sequences[blk][event_index] += 1
+            self.log_sequences[log_sequence_id]['Features Vector'] = features_vector

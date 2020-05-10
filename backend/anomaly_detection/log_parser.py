@@ -1,25 +1,23 @@
 import re
 
-
 class LogParser():
     def __init__(self, input_file):
         self.input_file = input_file
         self.anonymized_data = []
-        self.blk_events = []
+        self.log_sequences = {}
+        self.log_event = {}
         self.events = []
-        self.bins = {}
+        
         self.WORD_REGEX = r'([a-zA-Z]+)\s?'
         self.PARAM_REGEX = r'\<*\>'
 
-    # --------------------------------------------------------------------------------------------
     def parse(self):
         self.anonymize()
-        self.tokenize()
-        self.categorize()
+        self.extract_events()
+        self.get_representative_log_sequence()
 
-        return self.events, self.blk_events
+        return self.events, self.log_sequences
 
-    # --------------------------------------------------------------------------------------------
     def anonymize(self):
         '''
             Takes the relevant data from the dataset and anonymizes dynamic tokens
@@ -28,6 +26,8 @@ class LogParser():
             The resulting data is stored in self.anonymized_data for later use.
         '''
         with open(self.input_file) as log_file:
+            log_index = 0
+            
             for log in log_file:
                 cleaned_log = log.split(':', 1)  # Remove unnecessary data
                 tokens = cleaned_log[1].split()
@@ -36,59 +36,32 @@ class LogParser():
                 for token in tokens:
                     if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk':
                         if token[:3] == 'blk':
-                            # Register blk and to-be determined event
-                            self.blk_events.append([token, -1])
+                            blk_id = token
+
+                            if blk_id not in self.log_sequences: self.log_sequences[blk_id] = {'Logs': [log_index]} 
+                            else: self.log_sequences[blk_id]['Logs'].append(log_index)
 
                         token = '<*>'
 
                     log_template += token + ' '
 
                 self.anonymized_data.append(log_template.strip())
+                log_index += 1
 
-    # --------------------------------------------------------------------------------------------
-    def tokenize(self):
-        '''
-            After the data has been anonymized, this step takes care of separating it into
-            collections which are formed based on the number of words and params (dynamic tokens)
-            in each log.
+    def extract_events(self):
+        for anonimized_log_index, anonimized_log in enumerate(self.anonymized_data):
+            if anonimized_log not in self.events: self.events.append(anonimized_log)
+            
+            self.log_event[anonimized_log_index] = self.events.index(anonimized_log)
 
-            Aditional data, namely the 'events' key is added to ease the categorization step.
-        '''
-        for idx, log in enumerate(self.anonymized_data):
-            num_of_words = len(re.findall(self.WORD_REGEX, log))
-            num_of_params = len(re.findall(self.PARAM_REGEX, log))
+    def get_representative_log_sequence(self):
+        for key, value in self.log_sequences.items():
+            representative_log_sequence = [0] * len(self.events)
+            for anonymized_log_index in value['Logs']:
+                event_index = self.log_event[anonymized_log_index]
+                
+                if representative_log_sequence[event_index] == 0: representative_log_sequence[event_index] += 1
 
-            # Set key for that log -> 'w.p'
-            key = f'{num_of_words}.{num_of_params}'
+            self.log_sequences[key]['Representative Log Sequence'] = representative_log_sequence
 
-            if not self.bins.get(key):
-                # Create an item in the dict if it doesn't exist already
-                self.bins[key] = {
-                    'logs': [idx],
-                    'events': []
-                }
-            else:
-                # Otherwise add to that existing item
-                self.bins.get(key).get('logs').append(idx)
-
-    # --------------------------------------------------------------------------------------------
-    def categorize(self):
-        '''
-            Determines the resulting events in the data set and adds them to the to each bin 
-            as well as to the self.events list.
-
-            It also overrides the self.blk_events index (-1) so it references an event in the
-            self.events list.
-        '''
-        for value in self.bins.values():
-            for log_index in value.get('logs'):
-                log_template = self.anonymized_data[log_index]
-
-                if log_template in self.events:
-                    event_index = self.events.index(log_template)
-                    self.blk_events[log_index][1] = event_index
-                else:
-                    self.events.append(log_template)
-                    event_index = len(self.events) - 1
-                    value.get('events').append(event_index)
-                    self.blk_events[log_index][1] = event_index
+   

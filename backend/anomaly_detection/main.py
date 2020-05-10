@@ -4,16 +4,17 @@ from clustering import Clustering
 from idf import IDF
 
 parser = LogParser('HDFS_1K.log')
-events, blk_events = parser.parse()
+events, log_sequences = parser.parse()
 
-extractor = FeatureExtractor(events, blk_events)
+print(log_sequences[list(log_sequences.keys())[27]])
+
+extractor = FeatureExtractor(log_sequences, events)
 log_sequences = extractor.extract()
 
+print(log_sequences[list(log_sequences.keys())[27]])
+
 clustering = Clustering(log_sequences)
-clustering.cluster()
+log_sequences, clusters = clustering.cluster()
 
-calculateIDF = IDF(log_sequences)
-idf = calculateIDF.getIDF()
-
-# for x in idf:
- #    print("{0:.2f}".format(x))
+print(log_sequences[list(log_sequences.keys())[27]])
+print(len(clusters))
