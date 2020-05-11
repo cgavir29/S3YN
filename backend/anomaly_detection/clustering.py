@@ -5,8 +5,9 @@ import scipy.cluster.hierarchy as sch
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
 class Clustering():
-    def __init__(self, log_sequences):
+    def __init__(self, log_sequences, events):
         self.log_sequences = log_sequences
+        self.events = events
         self.clusters = {}
        
     def cluster(self):
@@ -30,7 +31,6 @@ class Clustering():
 
     def calculate_centroid(self):
         for cluster_id in self.clusters:
-            # Features vectors of the cluster
             features = [self.log_sequences[log_sequence_id]['Features Vector'] for log_sequence_id in self.clusters[cluster_id]['Log Sequence IDs']]
             
             arr = np.array(features)
@@ -39,4 +39,9 @@ class Clustering():
             centroid = np.array([np.sum(arr[:, i])/length for i in range(dim)])
             
             self.clusters[cluster_id]['Centroid'] = centroid
+            
+            self.clusters[cluster_id]['Events'] = []
+            
+            for event_centroid_index in range(len(centroid)): 
+                if centroid[event_centroid_index] != 0: self.clusters[cluster_id]['Events'].append(self.events[event_centroid_index]) 
            
