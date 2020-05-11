@@ -4,6 +4,7 @@ from flask_mongoengine import MongoEngine
 
 from anomaly_detection.feature_extractor import FeatureExtractor
 from anomaly_detection.log_parser import LogParser
+from anomaly_detection.clustering import Clustering
 
 from models.user import User
 from models.result import Result
@@ -97,17 +98,18 @@ def show_file(user_id, filename):
 @app.route('/users/<user_id>/files/<filename>/detect', methods=['GET'])
 def preprocess(user_id, filename):
     parser = LogParser(f'{UPLOADS_FOLDER}/{user_id}/{filename}')
-    events, blk_events = parser.parse()
+    events, log_sequences = parser.parse()
 
-    extractor = FeatureExtractor(events, blk_events)
-    features_vector = extractor.extract()
+    extractor = FeatureExtractor(log_sequences, events)
+    log_sequences = extractor.extract()
+
+    clustering = Clustering(log_sequences, events)
+    log_sequences, clusters = clustering.cluster()
 
     return jsonify({
         'events': events,
-        'features': features_vector,
-        'anomalies': []
+        'clusters': clusters
     })
-
 
 # --------------------------------------------------------------------------------
 if __name__ == '__main__':
