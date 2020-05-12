@@ -4,15 +4,26 @@ import pandas as pd # para el analisis de datos
 import scipy.cluster.hierarchy as sch
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
+from pymongo import MongoClient
+
 class Clustering():
     def __init__(self, log_sequences, events):
         self.log_sequences = log_sequences
         self.events = events
         self.clusters = {}
-       
+
+        self.client = MongoClient('mongodb+srv://s3yn:s3yn@pi2-j348a.mongodb.net/test?retryWrites=true&w=majority')
+        self.db = self.client.test
+
     def cluster(self):
         self.generate_clusters()
         self.calculate_centroid()
+
+        collection = self.db['cluster']
+        cursor = collection.find({})
+
+        for document in cursor:
+          print(str(document['centroid']) + ' -> ' + str(document['status']))
 
         return self.log_sequences, self.clusters
 
