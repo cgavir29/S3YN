@@ -6,87 +6,78 @@ from anomaly_detection.feature_extractor import FeatureExtractor
 from anomaly_detection.log_parser import LogParser
 from anomaly_detection.clustering import Clustering
 
+# Models
 from models.user import User
 from models.result import Result
-from models.cluster import Cluster
+from models.system import System
+# from models.cluster import Cluster
+
+# Routes
+from routes.users import user_routes
 
 import auth
 import config
 
 import os
 
-UPLOADS_FOLDER = './uploaded_files'
 ALLOWED_EXTENSIONS = {'txt', 'csv', 'log'}
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config['MONGODB_HOST'] = config.DB_URI
-app.config['UPLOADS_FOLDER'] = UPLOADS_FOLDER
+
+app.register_blueprint(user_routes)
 
 db = MongoEngine(app)
 CORS(app)
 
 
-# --------------------------------------------------------------------------------
-@app.route('/login', methods=['POST'])
-def login():
-    email = request.json.get('email')
-    password = request.json.get('password')
+@app.route('/systems')
+def get_systems():
+    systems = System.objects.only('name')
 
-    user = User.check_credentials(email, password)
-    if not user:
-        return jsonify({'msg': 'Incorrect email or password'}), 404
+    return jsonify({'systems': systems})
 
-    return jsonify({'user': user})
 
 # --------------------------------------------------------------------------------
-@app.route('/register', methods=['POST'])
-def register():
+@app.route('/users/<user_id>/systems/<system_name>/files')
+def get_files(user_id, system_name):
     try:
-        user = User(
-            name=request.json.get('name'),
-            email=request.json.get('email'),
-            password=auth.encrypt_password(request.json.get('password'))
-        )
-        user.save()
-    except:
-        return jsonify({'msg': 'Email already taken'}), 500
+        files = os.listdir(f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}')
 
-    return jsonify({'user': user})
-
-# --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/files', methods=['GET'])
-def get_files(user_id):
-    try:
-        logs = os.listdir(f'{UPLOADS_FOLDER}/{user_id}')
-
-        return jsonify({'logs': logs})
+        return jsonify({'files': files})
     except FileNotFoundError:
-        return jsonify({'msg': "You haven't uploaded any logs yet."}), 404
+        return jsonify({'msg': "You haven't uploaded any files yet."}), 404
+
 
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/files', methods=['POST'])
-def uploaded_file(user_id):
+@app.route('/users/<user_id>/systems/<system_name>/files', methods=['POST'])
+def save_file(user_id, system_name):
     if 'file' not in request.files:
         return jsonify({'msg': 'Something bad happened...'}), 400
 
-    user_folder = f'{UPLOADS_FOLDER}/{user_id}'
+    user_folder = f'{config.UPLOADS_FOLDER}/{user_id}'
     if not os.path.exists(user_folder):
         os.makedirs(user_folder)
 
+    system_folder = f'{user_folder}/{system_name}'
+    if not os.path.exists(system_folder):
+        os.makedirs(system_folder)
+
     file = request.files['file']
-    file.save(os.path.join(f'{user_folder}/{file.filename}'))
+    file.save(os.path.join(f'{system_folder}/{file.filename}'))
 
     return jsonify({'msg': 'File uploaded.'})
 
+
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/files/<filename>', methods=['GET'])
-def show_file(user_id, filename):
+@app.route('/users/<user_id>/systems/<system_name>/files/<filename>')
+def get_file(user_id, system_name, filename):
     try:
-        with open(f'{UPLOADS_FOLDER}/{user_id}/{filename}') as log_file:
+        with open(f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}') as file:
             lines = []
 
-            for idx, line in enumerate(log_file):
+            for idx, line in enumerate(file):
                 if idx < 10:
                     lines.append(line)
 
@@ -94,11 +85,31 @@ def show_file(user_id, filename):
     except:
         return jsonify({'msg': 'We were unable to find that file'}), 404
 
+
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/files/<filename>/detect', methods=['GET'])
-def preprocess(user_id, filename):
-    parser = LogParser(f'{UPLOADS_FOLDER}/{user_id}/{filename}')
-    events, log_sequences = parser.parse()
+@app.route('/users/<user_id>/systems/<system_name>/files/<filename>/preprocess')
+def preprocess(user_id, system_name, filename):
+    parser = LogParser(
+        f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
+    events, _ = parser.parse()
+
+    return jsonify({'events': events})
+
+
+# --------------------------------------------------------------------------------
+@app.route('/users/<user_id>/systems/<system_name>/files/<filename>/preprocess', methods=['POST'])
+def save_preprocess(user_id, system_name, filename):
+    events = request.json.get('events')
+
+
+@app.route('/users/<user_id>/systems/<system_name>/files/<filename>/detect', methods=['POST'])
+def detect(user_id, system_name, filename):
+    events = request.json.get('events')
+    # Save events to the corresponding System document if not there previously.
+
+    parser = LogParser(
+        f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
+    _, log_sequences = parser.parse()
 
     extractor = FeatureExtractor(log_sequences, events)
     log_sequences = extractor.extract()
@@ -106,10 +117,10 @@ def preprocess(user_id, filename):
     clustering = Clustering(log_sequences, events)
     log_sequences, clusters = clustering.cluster()
 
-    return jsonify({
-        'events': events,
-        'clusters': clusters
-    })
+    # Save clusters to the log's Result document.
+
+    return jsonify({'clusters': clusters})
+
 
 # --------------------------------------------------------------------------------
 if __name__ == '__main__':
