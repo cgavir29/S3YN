@@ -1,6 +1,12 @@
 from mongoengine import EmbeddedDocument, StringField
 
 
+STATUS_CHOICES = [
+    'Normal',
+    'Anomaly'
+]
+
+
 class Event(EmbeddedDocument):
-    event = StringField(required=True)
-    status = StringField(choices=('Normal', 'Anomaly'), required=True)
+    name = StringField(required=True)  # Pepito * juanito
+    status = StringField(choices=STATUS_CHOICES, required=True)

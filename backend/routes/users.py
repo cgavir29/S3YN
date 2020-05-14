@@ -1,5 +1,7 @@
 from flask import Blueprint, request, jsonify
 from models.user import User
+import auth
+
 
 user_routes = Blueprint('user_routes', __name__)
 
@@ -25,7 +27,7 @@ def register():
             password=auth.encrypt_password(request.json.get('password'))
         )
         user.save()
+
+        return jsonify({'user': user})
     except:
         return jsonify({'msg': 'Email already taken'}), 500
-
-    return jsonify({'user': user})

@@ -49,9 +49,11 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["logUser", "fetchLogs"]),
+    ...mapActions(["logUser", "fetchSystems"]),
     handleSubmit() {
       if (this.user.email === "" || this.user.password === "") return;
+      
+      this.fetchSystems();
 
       axios
         .post("/login", this.user)

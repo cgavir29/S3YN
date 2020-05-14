@@ -15,7 +15,6 @@ from models.system import System
 # Routes
 from routes.users import user_routes
 
-import auth
 import config
 
 import os
@@ -34,9 +33,12 @@ CORS(app)
 
 @app.route('/systems')
 def get_systems():
-    systems = System.objects.only('name')
+    try:
+        systems = System.objects.only('name')
 
-    return jsonify({'systems': systems})
+        return jsonify({'systems': systems})
+    except:
+        return jsonify({'msg': 'Internal server error'}), 500
 
 
 # --------------------------------------------------------------------------------
@@ -89,11 +91,24 @@ def get_file(user_id, system_name, filename):
 # --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/systems/<system_name>/files/<filename>/preprocess')
 def preprocess(user_id, system_name, filename):
+
     parser = LogParser(
         f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
     events, _ = parser.parse()
 
-    return jsonify({'events': events})
+    system = System.objects(name=system_name).first()
+    system_events_name = [event.name for event in system.events]
+    # f'{system_name/filename}'
+    setEvents = set(events)
+    setSystemEventsName = set(system_events_name)
+
+    registeredEvents = list(setEvents.intersection(setSystemEventsName))
+    nonRegisteredEvents = list(setEvents - setSystemEventsName)
+
+    return jsonify({
+        'registeredEvents': registeredEvents,
+        'nonRegisteredEvents': nonRegisteredEvents
+    })
 
 
 # --------------------------------------------------------------------------------

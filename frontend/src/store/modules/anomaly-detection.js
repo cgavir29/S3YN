@@ -26,13 +26,17 @@ const mutations = {
 };
 
 const actions = {
-  uploadFile({ commit }, { userId, formData }) {
+  uploadFile({ commit }, { userId, systemName, formData }) {
     axios
-      .post("/users/" + userId + "/files", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data"
+      .post(
+        "/users/" + userId + "/systems/" + systemName + "/files",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data"
+          }
         }
-      })
+      )
       .then(res => alert(res.data.msg))
       .catch(err => alert(err.response.data.msg));
   },
@@ -44,9 +48,9 @@ const actions = {
     commit("clearFeatures");
     commit("clearAnomalies");
   },
-  fetchLogs({ commit }, { userId }) {
+  fetchLogs({ commit }, { userId, systemName }) {
     axios
-      .get("/users/" + userId + "/files")
+      .get("/users/" + userId + "/systems/" + systemName + "/files")
       .then(res => {
         let logs = [];
         res.data.logs.forEach(function (item, index) {
@@ -62,13 +66,18 @@ const actions = {
         console.log(err.response.data.msg);
       });
   },
-  fetchAnomalyDetection({ commit }, { userId, filename }) {
+  fetchLogParserEvets({ commit }, { userId, systemName, filename }) {
     axios
-      .get("/users/" + userId + "/files/" + filename + "/detect")
+      .get(
+        "/users/" +
+          userId +
+          "/systems/" +
+          systemName +
+          "/files/" +
+          filename +
+          "/detect"
+      )
       .then(res => {
-        // Add the 'id' field to each part of the response, specifically 'events', 'features' and
-        // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
-
         let eventsWithId = [];
         res.data.events.forEach(function (item, index) {
           eventsWithId.push({
@@ -77,17 +86,24 @@ const actions = {
           });
         });
 
-        let idx = 1;
-        let featuresWithId = [];
-        for (let [blk, feature] of Object.entries(res.data.features)) {
-          featuresWithId.push({
-            id: idx,
-            blk: blk,
-            feature: feature
-          });
-
-          idx++;
-        }
+        commit("setEvents", eventsWithId);
+      })
+      .catch(err => console.log(err));
+  },
+  fetchAnomalyDetection({ commit }, { userId, systemName, filename }) {
+    axios
+      .get(
+        "/users/" +
+          userId +
+          "/systems/" +
+          systemName +
+          "/files/" +
+          filename +
+          "/detect"
+      )
+      .then(res => {
+        // Add the 'id' field to each part of the response, specifically 'events', 'features' and
+        // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
 
         let idx2 = 1;
         let anomaliesWithId = [];
@@ -100,8 +116,7 @@ const actions = {
 
           idx2++;
         }
-        commit("setEvents", eventsWithId);
-        commit("setFeatures", featuresWithId);
+
         commit("setAnomalies", anomaliesWithId);
       })
       .catch(err => console.log(err));
