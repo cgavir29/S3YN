@@ -112,11 +112,6 @@ def preprocess(user_id, system_name, filename):
 
 
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/systems/<system_name>/files/<filename>/preprocess', methods=['POST'])
-def save_preprocess(user_id, system_name, filename):
-    events = request.json.get('events')
-
-
 @app.route('/users/<user_id>/systems/<system_name>/files/<filename>/detect', methods=['POST'])
 def detect(user_id, system_name, filename):
     events = request.json.get('events')
