@@ -42,10 +42,17 @@ def get_systems():
 
 
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/systems/<system_name>/files')
-def get_files(user_id, system_name):
+@app.route('/users/<user_id>/files')
+def get_files(user_id):
     try:
-        files = os.listdir(f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}')
+        files = []
+
+        systems = os.listdir(f'{config.UPLOADS_FOLDER}/{user_id}')
+        for system in systems:
+            files.append({
+                'system': system,
+                'logs': os.listdir(f'{config.UPLOADS_FOLDER}/{user_id}/{system}')
+            })
 
         return jsonify({'files': files})
     except FileNotFoundError:
@@ -103,11 +110,11 @@ def preprocess(user_id, system_name, filename):
     setSystemEventsName = set(system_events_name)
 
     registeredEvents = list(setEvents.intersection(setSystemEventsName))
-    nonRegisteredEvents = list(setEvents - setSystemEventsName)
+    unregisteredEvents = list(setEvents - setSystemEventsName)
 
     return jsonify({
         'registeredEvents': registeredEvents,
-        'nonRegisteredEvents': nonRegisteredEvents
+        'unregisteredEvents': unregisteredEvents
     })
 
 

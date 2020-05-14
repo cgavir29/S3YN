@@ -12,23 +12,6 @@
         <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-start" v-if="this.getUser">
             <router-link
-              class="navbar-item "
-              :to="{ name: 'Uploads' }"
-              active-class="is-active"
-              exact
-              >Upload Logs</router-link
-            >
-            <router-link
-              class="navbar-item"
-              :to="{ name: 'Charts' }"
-              active-class="is-active"
-              exact
-              >Charts</router-link
-            >
-          </div>
-
-          <div class="navbar-end">
-            <router-link
               class="navbar-item"
               :to="{ name: 'Home' }"
               active-class="is-active"
@@ -37,11 +20,35 @@
             >
             <router-link
               class="navbar-item"
+              :to="{ name: 'Charts' }"
+              active-class="is-active"
+              exact
+              >Charts</router-link
+            >
+            <router-link
+              class="navbar-item "
+              :to="{ name: 'Uploads' }"
+              active-class="is-active"
+              exact
+              >Upload Logs</router-link
+            >
+          </div>
+
+          <div class="navbar-end">
+            <!-- <router-link
+              class="navbar-item"
+              :to="{ name: 'Home' }"
+              active-class="is-active"
+              exact
+              >Home</router-link
+            > -->
+            <!-- <router-link
+              class="navbar-item"
               :to="{ name: 'About' }"
               active-class="is-active"
               exact
               >About</router-link
-            >
+            > -->
 
             <div class="navbar-item" v-if="!this.getUser">
               <span clas="navbar-item">

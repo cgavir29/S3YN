@@ -21,6 +21,10 @@
           <b-table-column field="event" label="Event">
             {{ props.row.event }}
           </b-table-column>
+
+          <b-table-column field="status" label="Status">
+            {{ props.row.status }}
+          </b-table-column>
         </template>
       </b-table>
     </div>

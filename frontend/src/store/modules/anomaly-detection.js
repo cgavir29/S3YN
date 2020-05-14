@@ -48,15 +48,21 @@ const actions = {
     commit("clearFeatures");
     commit("clearAnomalies");
   },
-  fetchLogs({ commit }, { userId, systemName }) {
+  fetchLogs({ commit }, { userId }) {
     axios
-      .get("/users/" + userId + "/systems/" + systemName + "/files")
+      .get("/users/" + userId + "/files")
       .then(res => {
+        let idx = 1;
         let logs = [];
-        res.data.logs.forEach(function (item, index) {
-          logs.push({
-            id: index,
-            filename: item
+
+        res.data.files.forEach(item => {
+          item.logs.forEach(log => {
+            logs.push({
+              id: idx,
+              system: item.system,
+              filename: log
+            });
+            idx++;
           });
         });
 
@@ -66,24 +72,36 @@ const actions = {
         console.log(err.response.data.msg);
       });
   },
-  fetchLogParserEvets({ commit }, { userId, systemName, filename }) {
+  fetchLogParser({ commit }, { user, system, filename }) {
     axios
       .get(
         "/users/" +
-          userId +
+          user +
           "/systems/" +
-          systemName +
+          system +
           "/files/" +
           filename +
-          "/detect"
+          "/preprocess"
       )
       .then(res => {
+        let idx = 1;
         let eventsWithId = [];
-        res.data.events.forEach(function (item, index) {
+        res.data.registeredEvents.forEach(event => {
           eventsWithId.push({
-            id: index + 1,
-            event: item
+            id: idx,
+            event: event,
+            status: status
           });
+          idx++;
+        });
+
+        res.data.unregisteredEvents.forEach(event => {
+          eventsWithId.push({
+            id: idx,
+            event: event,
+            status: null
+          });
+          idx++;
         });
 
         commit("setEvents", eventsWithId);
@@ -105,7 +123,7 @@ const actions = {
         // Add the 'id' field to each part of the response, specifically 'events', 'features' and
         // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
 
-        let idx2 = 1;
+        let idx = 1;
         let anomaliesWithId = [];
         for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
           anomaliesWithId.push({
@@ -114,7 +132,7 @@ const actions = {
             anomaly: anomaly
           });
 
-          idx2++;
+          idx++;
         }
 
         commit("setAnomalies", anomaliesWithId);

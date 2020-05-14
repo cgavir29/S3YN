@@ -1,12 +1,11 @@
 <template>
   <section>
-    <p class="subtitle has-text-weight-bold">My Logs</p>
     <div v-if="!getLogs">
       <p>You haven't uploaded any logs yet.</p>
     </div>
     <div v-else>
       <b-tabs>
-        <b-tab-item label="Table">
+        <b-tab-item>
           <b-table
             :data="getLogs"
             :columns="columns"
@@ -16,12 +15,16 @@
           </b-table>
         </b-tab-item>
 
-        <b-tab-item label="Selected">
+        <!-- <b-tab-item label="Selected">
           <pre>{{ selected }}</pre>
-        </b-tab-item>
+        </b-tab-item> -->
       </b-tabs>
 
-      <b-button class="is-info" @click="isLogPreviewModalActive = true">
+      <b-button
+        class="is-info"
+        :disabled="!selected"
+        @click="isLogPreviewModalActive = true"
+      >
         Preview
       </b-button>
       <b-modal
@@ -33,12 +36,19 @@
         aria-modal
       >
         <div v-if="selected">
-          <LogPreview v-bind:logFilename="selected.filename" />
+          <LogPreview
+            v-bind:logSystem="selected.system"
+            v-bind:logFilename="selected.filename"
+          />
         </div>
       </b-modal>
       &nbsp;
-      <b-button class="is-warning" @click="runFetchAnomalyDetection">
-        Detect Anomalies
+      <b-button
+        class="is-warning"
+        :disabled="!selected"
+        @click="runFetchLogParser"
+      >
+        Preprocess
       </b-button>
       &nbsp;
       <button
@@ -69,27 +79,31 @@ export default {
       columns: [
         {
           field: "id",
-          label: "#",
-          width: 40
+          label: "#"
         },
         {
           field: "filename",
           label: "Filename"
+        },
+        {
+          field: "system",
+          label: "System"
         }
       ]
     };
   },
   computed: {
-    ...mapGetters(["getUser", "getLogs"])
+    ...mapGetters(["getUser", "getSystems", "getLogs"])
   },
   methods: {
-    ...mapActions(["fetchLogs", "fetchAnomalyDetection"]),
-    runFetchAnomalyDetection() {
+    ...mapActions(["fetchLogs", "fetchLogParser"]),
+    runFetchLogParser() {
       if (!this.selected) {
         alert("Please select a file first.");
       } else {
-        this.fetchAnomalyDetection({
-          userId: this.getUser._id.$oid,
+        this.fetchLogParser({
+          user: this.getUser._id.$oid,
+          system: this.selected.system,
           filename: this.selected.filename
         });
         this.$router.push({ name: "Charts" });

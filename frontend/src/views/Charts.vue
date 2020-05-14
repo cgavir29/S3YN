@@ -3,19 +3,19 @@
     <h1 class="title">Charts</h1>
     <LogParserResults />
     <br />
-    <FeatureExtractorResults />
+    <!-- <FeatureExtractorResults /> -->
   </div>
 </template>
 
 <script>
 import LogParserResults from "@/components/LogParserResults.vue";
-import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
+// import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
 
 export default {
   name: "Charts",
   components: {
     LogParserResults,
-    FeatureExtractorResults
+    // FeatureExtractorResults
   }
 };
 </script>
