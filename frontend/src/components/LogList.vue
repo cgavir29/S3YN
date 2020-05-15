@@ -14,10 +14,6 @@
           >
           </b-table>
         </b-tab-item>
-
-        <!-- <b-tab-item label="Selected">
-          <pre>{{ selected }}</pre>
-        </b-tab-item> -->
       </b-tabs>
 
       <b-button
@@ -46,9 +42,9 @@
       <b-button
         class="is-warning"
         :disabled="!selected"
-        @click="runFetchLogParser"
+        @click="runfetchAnomalyDetection"
       >
-        Preprocess
+        Detect Anomalies
       </b-button>
       &nbsp;
       <button
@@ -96,12 +92,12 @@ export default {
     ...mapGetters(["getUser", "getSystems", "getLogs"])
   },
   methods: {
-    ...mapActions(["fetchLogs", "fetchLogParser"]),
-    runFetchLogParser() {
+    ...mapActions(["fetchLogs", "fetchAnomalyDetection"]),
+    runFetchAnomalyDetection() {
       if (!this.selected) {
         alert("Please select a file first.");
       } else {
-        this.fetchLogParser({
+        this.fetchAnomalyDetection({
           user: this.getUser._id.$oid,
           system: this.selected.system,
           filename: this.selected.filename

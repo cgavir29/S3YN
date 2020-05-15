@@ -23,7 +23,12 @@
           </b-table-column>
 
           <b-table-column field="status" label="Status">
-            {{ props.row.status }}
+            <div v-if="props.row.status == 'INFO'">
+              <span class="tag is-success">{{ props.row.status }}</span>
+            </div>
+            <div v-else>
+              <span class="tag is-danger">{{ props.row.status }}</span>
+            </div>
           </b-table-column>
         </template>
       </b-table>
@@ -38,7 +43,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "LogParserResults",
+  name: "LogEventsResult",
   computed: {
     ...mapGetters(["getEvents"])
   }

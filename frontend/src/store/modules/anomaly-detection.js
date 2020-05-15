@@ -3,14 +3,14 @@ import axios from "axios";
 const state = {
   logs: null,
   events: null,
-  features: null,
+  // features: null,
   anomalies: null
 };
 
 const getters = {
   getLogs: state => state.logs,
   getEvents: state => state.events,
-  getFeatures: state => state.features,
+  // getFeatures: state => state.features,
   getAnomalies: state => state.anomalies
 };
 
@@ -19,8 +19,8 @@ const mutations = {
   clearLogs: state => (state.logs = null),
   setEvents: (state, events) => (state.events = events),
   clearEvents: state => (state.events = null),
-  setFeatures: (state, features) => (state.features = features),
-  clearFeatures: state => (state.features = null),
+  // setFeatures: (state, features) => (state.features = features),
+  // clearFeatures: state => (state.features = null),
   setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
   clearAnomalies: state => (state.anomalies = null)
 };
@@ -72,42 +72,6 @@ const actions = {
         console.log(err.response.data.msg);
       });
   },
-  fetchLogParser({ commit }, { user, system, filename }) {
-    axios
-      .get(
-        "/users/" +
-          user +
-          "/systems/" +
-          system +
-          "/files/" +
-          filename +
-          "/preprocess"
-      )
-      .then(res => {
-        let idx = 1;
-        let eventsWithId = [];
-        res.data.registeredEvents.forEach(event => {
-          eventsWithId.push({
-            id: idx,
-            event: event,
-            status: status
-          });
-          idx++;
-        });
-
-        res.data.unregisteredEvents.forEach(event => {
-          eventsWithId.push({
-            id: idx,
-            event: event,
-            status: null
-          });
-          idx++;
-        });
-
-        commit("setEvents", eventsWithId);
-      })
-      .catch(err => console.log(err));
-  },
   fetchAnomalyDetection({ commit }, { userId, systemName, filename }) {
     axios
       .get(
@@ -120,22 +84,31 @@ const actions = {
           "/detect"
       )
       .then(res => {
-        // Add the 'id' field to each part of the response, specifically 'events', 'features' and
-        // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
-
-        let idx = 1;
-        let anomaliesWithId = [];
-        for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
-          anomaliesWithId.push({
-            id: idx,
-            blk: blk,
-            anomaly: anomaly
+        let idxEvent = 1;
+        eventsWithId = [];
+        res.data.events.forEach(event => {
+          eventsWithId.push({
+            id: idxEvent,
+            event: event.name,
+            status: event.status
           });
+          idxEvent++;
+        });
 
-          idx++;
-        }
+        // let idxAnomaly = 1;
+        // let anomaliesWithId = [];
+        // for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
+        //   anomaliesWithId.push({
+        //     id: idxAnomaly,
+        //     blk: blk,
+        //     anomaly: anomaly
+        //   });
 
-        commit("setAnomalies", anomaliesWithId);
+        //   idxAnomaly++;
+        // }
+
+        commit("setEvents", eventsWithId);
+        // commit("setAnomalies", anomaliesWithId);
       })
       .catch(err => console.log(err));
   }
