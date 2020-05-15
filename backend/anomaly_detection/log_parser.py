@@ -34,13 +34,18 @@ class LogParser():
                 log_template = ''
 
                 for token in tokens:
-                    if token[0] == '/' or token[0].isnumeric() or token[:3] == 'blk':
-                        if token[:3] == 'blk':
-                            blk_id = token
+                    if token[:5] == 'local' or token[:6] == 'remote':
+                        token = token.split('/')[0] + '<*>'
 
-                            if blk_id not in self.log_sequences: self.log_sequences[blk_id] = {'Logs': [log_index]} 
-                            else: self.log_sequences[blk_id]['Logs'].append(log_index)
+                    elif token[:3] == 'blk':
+                        blk_id = token
 
+                        if blk_id not in self.log_sequences: self.log_sequences[blk_id] = {'Logs': [log_index]} 
+                        else: self.log_sequences[blk_id]['Logs'].append(log_index)
+
+                        token = '<*>'
+
+                    elif token[0] == '/' or token[0].isnumeric() or token[:4] == 'java':
                         token = '<*>'
 
                     log_template += token + ' '
