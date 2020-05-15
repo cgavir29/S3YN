@@ -29,7 +29,7 @@ import { mapGetters } from "vuex";
 
 export default {
   name: "LogPreview",
-  props: ["logFilename"],
+  props: ["logSystem", "logFilename"],
   data() {
     return {
       lines: []
@@ -40,7 +40,7 @@ export default {
   },
   beforeMount() {
     axios
-      .get("/users/" + this.getUser._id.$oid + "/files/" + this.logFilename)
+      .get("/users/" + this.getUser._id.$oid + "/systems/" + this.logSystem + "/files/" + this.logFilename)
       .then(res => {
         this.lines = res.data.lines;
       })

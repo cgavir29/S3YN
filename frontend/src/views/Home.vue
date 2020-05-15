@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1 class="title">Welcome to S3YN</h1>
     <div v-if="!getUser">
+      <h1 class="title">Welcome to S3YN</h1>
       Sign in to start detecting
     </div>
     <div v-else>
+      <h1 class="title">My Logs</h1>
       <LogList />
     </div>
   </div>
