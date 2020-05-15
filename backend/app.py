@@ -10,6 +10,7 @@ from anomaly_detection.clustering import Clustering
 from models.user import User
 from models.result import Result
 from models.system import System
+from models.event import Event
 # from models.cluster import Cluster
 
 # Routes
@@ -96,47 +97,52 @@ def get_file(user_id, system_name, filename):
 
 
 # --------------------------------------------------------------------------------
-@app.route('/users/<user_id>/systems/<system_name>/files/<filename>/preprocess')
-def preprocess(user_id, system_name, filename):
-
-    parser = LogParser(
-        f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
-    events, _ = parser.parse()
-
-    system = System.objects(name=system_name).first()
-    system_events_name = [event.name for event in system.events]
-    # f'{system_name/filename}'
-    setEvents = set(events)
-    setSystemEventsName = set(system_events_name)
-
-    registeredEvents = list(setEvents.intersection(setSystemEventsName))
-    unregisteredEvents = list(setEvents - setSystemEventsName)
-
-    return jsonify({
-        'registeredEvents': registeredEvents,
-        'unregisteredEvents': unregisteredEvents
-    })
-
-
-# --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/systems/<system_name>/files/<filename>/detect', methods=['POST'])
 def detect(user_id, system_name, filename):
-    events = request.json.get('events')
-    # Save events to the corresponding System document if not there previously.
-
     parser = LogParser(
         f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
-    _, log_sequences = parser.parse()
-
+    events, log_sequences = parser.parse()
     extractor = FeatureExtractor(log_sequences, events)
     log_sequences = extractor.extract()
 
     clustering = Clustering(log_sequences, events)
     log_sequences, clusters = clustering.cluster()
 
-    # Save clusters to the log's Result document.
+    document_events = []
+    document_names = []
+    for name, status in events.items():
+        document_events.append(Event(name=name, status=status))
+        document_names.append(name)
 
-    return jsonify({'clusters': clusters})
+    system = System.objects(name=system_name).first()
+
+    system_events_name = [event.name for event in system.events]
+
+    setEvents = set(document_names)
+    setSystemEventsName = set(system_events_name)
+
+    unregisteredEvents = list(setEvents - setSystemEventsName)
+    # agregar los unregisteredEvents al system en el atributo de events
+
+    # falta merterle a result los clusters, si se junta el preprocess y detect
+    # ir al modelo de result y pner el campo cluster required true
+
+    # {
+    #     'posible_abnormal_events': 1,
+    #     'event(juanchito * pepito)': ['blk343545', 'blk565478']
+    # }
+
+    result = Result(
+        user_id=user_id,
+        path=f'{system_name}/{filename}',
+        events=document_events
+    )
+
+    #verificar el json document_events
+    return jsonify({
+        'events': document_events,
+        'clusters': clusters
+    })
 
 
 # --------------------------------------------------------------------------------
