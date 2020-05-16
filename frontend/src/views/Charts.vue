@@ -5,21 +5,18 @@
     <br />
     <LogClustersResult />
     <br />
-    <!-- <FeatureExtractorResults /> -->
   </div>
 </template>
 
 <script>
 import LogEventsResult from "@/components/LogEventsResult.vue";
 import LogClustersResult from "@/components/LogClustersResult.vue";
-// import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
 
 export default {
   name: "Charts",
   components: {
     LogEventsResult,
     LogClustersResult
-    // FeatureExtractorResults
   }
 };
 </script>

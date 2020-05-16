@@ -140,11 +140,11 @@ export default {
     ...mapGetters(["getUser"])
   },
   methods: {
-    ...mapActions(["logoutUser", "clearLogs", "clearAnomalyDetectionData"]),
+    ...mapActions(["logoutUser", "clearLogs", "clearAnomalyDetection"]),
     clearAll() {
       this.logoutUser();
       this.clearLogs();
-      this.clearAnomalyDetectionData();
+      this.clearAnomalyDetection();
     }
   }
 };

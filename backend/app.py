@@ -11,7 +11,7 @@ from models.user import User
 from models.result import Result
 from models.system import System
 from models.event import Event
-# from models.cluster import Cluster
+from models.cluster import Cluster
 
 # Routes
 from routes.users import user_routes
@@ -108,12 +108,15 @@ def detect(user_id, system_name, filename):
 
     clustering = Clustering(log_sequences, events)
     log_sequences, clusters = clustering.cluster()
+    print(clusters)
 
     # document_clusters = []
     # for cluster in clusters:
     #     document_clusters.append(
     #         Cluster(
     #             centroid=cluster.get('centroid'),
+    #             num_possible_abnormal_events=cluster.get(
+    #                 'num_possible_abnormal_events'),
     #             possible_abnormal_events=cluster.get(
     #                 'possible_abnormal_events')
     #         )

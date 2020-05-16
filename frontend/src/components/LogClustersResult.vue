@@ -3,11 +3,14 @@
     <p class="subtitle has-text-weight-bold">Clusters</p>
     <div v-if="this.getClusters">
       <div v-for="(cluster, index) in this.getClusters" :key="index">
-        <LogCluster
-          :index="index + 1"
-          :possibleAbnormalEvents="cluster.possible_abnormal_events"
-          :abnormalEvents="cluster.abnormal_events"
-        />
+        <div v-if="cluster.num_possible_abnormal_events > 0">
+          <LogCluster
+            :index="index + 1"
+            :numPossibleAbnormalEvents="cluster.num_possible_abnormal_events"
+            :possibleAbnormalEvents="cluster.possible_abnormal_events"
+          />
+          <br>
+        </div>
       </div>
     </div>
     <div v-else>

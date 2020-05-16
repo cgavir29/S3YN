@@ -3,16 +3,12 @@ import axios from "axios";
 const state = {
   logs: null,
   events: null,
-  // features: null,
-  // anomalies: null
   clusters: null
 };
 
 const getters = {
   getLogs: state => state.logs,
   getEvents: state => state.events,
-  // getFeatures: state => state.features,
-  // getAnomalies: state => state.anomalies
   getClusters: state => state.clusters
 };
 
@@ -21,10 +17,6 @@ const mutations = {
   clearLogs: state => (state.logs = null),
   setEvents: (state, events) => (state.events = events),
   clearEvents: state => (state.events = null),
-  // setFeatures: (state, features) => (state.features = features),
-  // clearFeatures: state => (state.features = null),
-  // setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
-  // clearAnomalies: state => (state.anomalies = null)
   setClusters: (state, clusters) => (state.clusters = clusters),
   clearClusters: state => (state.clusters = null)
 };
@@ -49,8 +41,6 @@ const actions = {
   },
   clearAnomalyDetection({ commit }) {
     commit("clearEvents");
-    // commit("clearFeatures");
-    // commit("clearAnomalies");
     commit("clearClusters");
   },
   fetchLogs({ commit }, { userId }) {
@@ -101,20 +91,7 @@ const actions = {
           idxEvent++;
         }
 
-        // let idxAnomaly = 1;
-        // let anomaliesWithId = [];
-        // for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
-        //   anomaliesWithId.push({
-        //     id: idxAnomaly,
-        //     blk: blk,
-        //     anomaly: anomaly
-        //   });
-
-        //   idxAnomaly++;
-        // }
-
         commit("setEvents", eventsWithId);
-        // commit("setAnomalies", anomaliesWithId);
         commit("setClusters", res.data.clusters);
       })
       .catch(err => console.log(err));
