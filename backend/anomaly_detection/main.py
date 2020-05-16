@@ -10,9 +10,9 @@ extractor = FeatureExtractor(log_sequences, list(tagged_events.keys()))
 log_sequences = extractor.extract()
 
 clustering = Clustering(log_sequences, tagged_events)
-log_sequences, clusters = clustering.cluster()
+cluster_ids, cluster_values = clustering.cluster()
 
-for cluster_value in list(clusters.values()):
+for cluster_value in cluster_values:
     if cluster_value['possible_abnormal_events'] != 0:
         print(cluster_value)
         print()
