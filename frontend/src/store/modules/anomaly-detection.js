@@ -82,14 +82,13 @@ const actions = {
         let idxEvent = 1;
         let eventsWithId = [];
 
-        for (let [event, status] of Object.entries(res.data.events)) {
+        res.data.events.forEach(event => {
           eventsWithId.push({
             id: idxEvent,
-            event: event,
-            status: status
+            event: event.name,
+            status: event.status
           });
-          idxEvent++;
-        }
+        });
 
         commit("setEvents", eventsWithId);
         commit("setClusters", res.data.clusters);

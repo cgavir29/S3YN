@@ -23,10 +23,7 @@
           </b-table-column>
 
           <b-table-column field="status" label="Status">
-            <div v-if="props.row.status == 'INFO'">
-              <span class="tag is-success">{{ props.row.status }}</span>
-            </div>
-            <div v-else>
+            <div>
               <span class="tag is-danger">{{ props.row.status }}</span>
             </div>
           </b-table-column>
@@ -34,7 +31,9 @@
       </b-table>
     </div>
     <div v-else>
-      <p>No results yet</p>
+      <div>
+        <span class="tag is-warning is-medium">No abnormal events</span>
+      </div>
     </div>
   </section>
 </template>
