@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <p class="subtitle has-text-weight-bold">Events</p>
     <div v-if="this.getEvents">
       <b-table
@@ -36,7 +36,7 @@
     <div v-else>
       <p>No results yet</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

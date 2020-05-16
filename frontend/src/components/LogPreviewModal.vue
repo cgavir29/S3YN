@@ -28,7 +28,7 @@ import axios from "axios";
 import { mapGetters } from "vuex";
 
 export default {
-  name: "LogPreview",
+  name: "LogPreviewModal",
   props: ["logSystem", "logFilename"],
   data() {
     return {

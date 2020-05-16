@@ -4,14 +4,16 @@ const state = {
   logs: null,
   events: null,
   // features: null,
-  anomalies: null
+  // anomalies: null
+  clusters: null
 };
 
 const getters = {
   getLogs: state => state.logs,
   getEvents: state => state.events,
   // getFeatures: state => state.features,
-  getAnomalies: state => state.anomalies
+  // getAnomalies: state => state.anomalies
+  getClusters: state => state.clusters
 };
 
 const mutations = {
@@ -21,8 +23,10 @@ const mutations = {
   clearEvents: state => (state.events = null),
   // setFeatures: (state, features) => (state.features = features),
   // clearFeatures: state => (state.features = null),
-  setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
-  clearAnomalies: state => (state.anomalies = null)
+  // setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
+  // clearAnomalies: state => (state.anomalies = null)
+  setClusters: (state, clusters) => (state.clusters = clusters),
+  clearClusters: state => (state.clusters = null)
 };
 
 const actions = {
@@ -43,10 +47,11 @@ const actions = {
   clearLogs({ commit }) {
     commit("clearLogs");
   },
-  clearAnomalyDetectionData({ commit }) {
+  clearAnomalyDetection({ commit }) {
     commit("clearEvents");
-    commit("clearFeatures");
-    commit("clearAnomalies");
+    // commit("clearFeatures");
+    // commit("clearAnomalies");
+    commit("clearClusters");
   },
   fetchLogs({ commit }, { userId }) {
     axios
@@ -72,28 +77,29 @@ const actions = {
         console.log(err.response.data.msg);
       });
   },
-  fetchAnomalyDetection({ commit }, { userId, systemName, filename }) {
+  fetchAnomalyDetection({ commit }, { user, system, filename }) {
     axios
-      .get(
+      .post(
         "/users/" +
-          userId +
+          user +
           "/systems/" +
-          systemName +
+          system +
           "/files/" +
           filename +
           "/detect"
       )
       .then(res => {
         let idxEvent = 1;
-        eventsWithId = [];
-        res.data.events.forEach(event => {
+        let eventsWithId = [];
+
+        for (let [event, status] of Object.entries(res.data.events)) {
           eventsWithId.push({
             id: idxEvent,
-            event: event.name,
-            status: event.status
+            event: event,
+            status: status
           });
           idxEvent++;
-        });
+        }
 
         // let idxAnomaly = 1;
         // let anomaliesWithId = [];
@@ -109,6 +115,7 @@ const actions = {
 
         commit("setEvents", eventsWithId);
         // commit("setAnomalies", anomaliesWithId);
+        commit("setClusters", res.data.clusters);
       })
       .catch(err => console.log(err));
   }

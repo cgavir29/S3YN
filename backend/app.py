@@ -102,26 +102,28 @@ def detect(user_id, system_name, filename):
     parser = LogParser(
         f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
     events, log_sequences = parser.parse()
+
     extractor = FeatureExtractor(log_sequences, events)
     log_sequences = extractor.extract()
 
-    clustering = Clustering(log_sequences, events)
-    log_sequences, clusters = clustering.cluster()
+    # clustering = Clustering(log_sequences, events)
+    # log_sequences, clusters = clustering.cluster()
 
-    document_events = []
-    document_names = []
-    for name, status in events.items():
-        document_events.append(Event(name=name, status=status))
-        document_names.append(name)
+    # document_events = []
+    # document_names = []
+    # for name, status in events.items():
+    #     document_events.append(Event(name=name, status=status))
+    #     document_names.append(name)
 
-    system = System.objects(name=system_name).first()
+    # system = System.objects(name=system_name).first()
 
-    system_events_name = [event.name for event in system.events]
+    # system_events_name = [event.name for event in system.events]
 
-    setEvents = set(document_names)
-    setSystemEventsName = set(system_events_name)
+    # setEvents = set(document_names)
+    # setSystemEventsName = set(system_events_name)
 
-    unregisteredEvents = list(setEvents - setSystemEventsName)
+    # unregisteredEvents = list(setEvents - setSystemEventsName)
+
     # agregar los unregisteredEvents al system en el atributo de events
 
     # falta merterle a result los clusters, si se junta el preprocess y detect
@@ -132,16 +134,16 @@ def detect(user_id, system_name, filename):
     #     'event(juanchito * pepito)': ['blk343545', 'blk565478']
     # }
 
-    result = Result(
-        user_id=user_id,
-        path=f'{system_name}/{filename}',
-        events=document_events
-    )
+    # result = Result(
+    #     user_id=user_id,
+    #     path=f'{system_name}/{filename}',
+    #     events=document_events
+    # )
 
-    #verificar el json document_events
+    # verificar el json document_events
     return jsonify({
-        'events': document_events,
-        'clusters': clusters
+        'events': events,
+        # 'clusters': clusters
     })
 
 

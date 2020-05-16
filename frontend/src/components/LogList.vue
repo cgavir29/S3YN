@@ -32,7 +32,7 @@
         aria-modal
       >
         <div v-if="selected">
-          <LogPreview
+          <LogPreviewModal
             v-bind:logSystem="selected.system"
             v-bind:logFilename="selected.filename"
           />
@@ -42,7 +42,7 @@
       <b-button
         class="is-warning"
         :disabled="!selected"
-        @click="runfetchAnomalyDetection"
+        @click="runFetchAnomalyDetection"
       >
         Detect Anomalies
       </b-button>
@@ -61,12 +61,12 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import LogPreview from "@/components/LogPreview.vue";
+import LogPreviewModal from "@/components/LogPreviewModal.vue";
 
 export default {
   name: "LogList",
   components: {
-    LogPreview
+    LogPreviewModal
   },
   data() {
     return {

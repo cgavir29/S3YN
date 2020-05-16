@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import LogEventsResult from "@/components/LogEventsResults.vue";
-import LogClustersResult from "@/components/LogClustersResults.vue";
+import LogEventsResult from "@/components/LogEventsResult.vue";
+// import LogClustersResult from "@/components/LogClustersResult.vue";
 // import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
 
 export default {
   name: "Charts",
   components: {
     LogEventsResult,
-    LogClustersResult
+    // LogClustersResult
     // FeatureExtractorResults
   }
 };
