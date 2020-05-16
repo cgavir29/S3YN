@@ -2,7 +2,6 @@ from mongoengine import EmbeddedDocument, StringField, IntField, ListField, Dict
 
 
 class Cluster(EmbeddedDocument):
-    # centroid = ListField(required=True)
-    # status = StringField(max_length=30, required=True)  # Normal/Anomaly
+    centroid = ListField(required=True)
     possible_abnormal_events = IntField(required=True)
     outliers = DictField()

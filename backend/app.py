@@ -108,7 +108,17 @@ def detect(user_id, system_name, filename):
 
     clustering = Clustering(log_sequences, events)
     log_sequences, clusters = clustering.cluster()
-    print(len(clusters))
+
+    # document_clusters = []
+    # for cluster in clusters:
+    #     document_clusters.append(
+    #         Cluster(
+    #             centroid=cluster.get('centroid'),
+    #             possible_abnormal_events=cluster.get(
+    #                 'possible_abnormal_events')
+    #         )
+    #     )
+
     # document_events = []
     # document_names = []
     # for name, status in events.items():
@@ -138,12 +148,13 @@ def detect(user_id, system_name, filename):
     #     user_id=user_id,
     #     path=f'{system_name}/{filename}',
     #     events=document_events
+
     # )
 
     # verificar el json document_events
     return jsonify({
         'events': events,
-        'clusters': []
+        'clusters': clusters
     })
 
 
