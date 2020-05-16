@@ -3,15 +3,13 @@ import axios from "axios";
 const state = {
   logs: null,
   events: null,
-  features: null,
-  anomalies: null
+  clusters: null
 };
 
 const getters = {
   getLogs: state => state.logs,
   getEvents: state => state.events,
-  getFeatures: state => state.features,
-  getAnomalies: state => state.anomalies
+  getClusters: state => state.clusters
 };
 
 const mutations = {
@@ -19,10 +17,8 @@ const mutations = {
   clearLogs: state => (state.logs = null),
   setEvents: (state, events) => (state.events = events),
   clearEvents: state => (state.events = null),
-  setFeatures: (state, features) => (state.features = features),
-  clearFeatures: state => (state.features = null),
-  setAnomalies: (state, anomalies) => (state.anomalies = anomalies),
-  clearAnomalies: state => (state.anomalies = null)
+  setClusters: (state, clusters) => (state.clusters = clusters),
+  clearClusters: state => (state.clusters = null)
 };
 
 const actions = {
@@ -43,10 +39,9 @@ const actions = {
   clearLogs({ commit }) {
     commit("clearLogs");
   },
-  clearAnomalyDetectionData({ commit }) {
+  clearAnomalyDetection({ commit }) {
     commit("clearEvents");
-    commit("clearFeatures");
-    commit("clearAnomalies");
+    commit("clearClusters");
   },
   fetchLogs({ commit }, { userId }) {
     axios
@@ -72,70 +67,32 @@ const actions = {
         console.log(err.response.data.msg);
       });
   },
-  fetchLogParser({ commit }, { user, system, filename }) {
+  fetchAnomalyDetection({ commit }, { user, system, filename }) {
     axios
-      .get(
+      .post(
         "/users/" +
           user +
           "/systems/" +
           system +
           "/files/" +
           filename +
-          "/preprocess"
-      )
-      .then(res => {
-        let idx = 1;
-        let eventsWithId = [];
-        res.data.registeredEvents.forEach(event => {
-          eventsWithId.push({
-            id: idx,
-            event: event,
-            status: status
-          });
-          idx++;
-        });
-
-        res.data.unregisteredEvents.forEach(event => {
-          eventsWithId.push({
-            id: idx,
-            event: event,
-            status: null
-          });
-          idx++;
-        });
-
-        commit("setEvents", eventsWithId);
-      })
-      .catch(err => console.log(err));
-  },
-  fetchAnomalyDetection({ commit }, { userId, systemName, filename }) {
-    axios
-      .get(
-        "/users/" +
-          userId +
-          "/systems/" +
-          systemName +
-          "/files/" +
-          filename +
           "/detect"
       )
       .then(res => {
-        // Add the 'id' field to each part of the response, specifically 'events', 'features' and
-        // 'anomalies' so they can be easily looped through and displayed in Buefy tables.
+        let idxEvent = 1;
+        let eventsWithId = [];
 
-        let idx = 1;
-        let anomaliesWithId = [];
-        for (let [blk, anomaly] of Object.entries(res.data.anomalies)) {
-          anomaliesWithId.push({
-            id: idx,
-            blk: blk,
-            anomaly: anomaly
+        for (let [event, status] of Object.entries(res.data.events)) {
+          eventsWithId.push({
+            id: idxEvent,
+            event: event,
+            status: status
           });
-
-          idx++;
+          idxEvent++;
         }
 
-        commit("setAnomalies", anomaliesWithId);
+        commit("setEvents", eventsWithId);
+        commit("setClusters", res.data.clusters);
       })
       .catch(err => console.log(err));
   }

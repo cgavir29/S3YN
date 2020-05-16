@@ -11,7 +11,7 @@ from models.user import User
 from models.result import Result
 from models.system import System
 from models.event import Event
-# from models.cluster import Cluster
+from models.cluster import Cluster
 
 # Routes
 from routes.users import user_routes
@@ -102,26 +102,41 @@ def detect(user_id, system_name, filename):
     parser = LogParser(
         f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
     events, log_sequences = parser.parse()
+
     extractor = FeatureExtractor(log_sequences, events)
     log_sequences = extractor.extract()
 
     clustering = Clustering(log_sequences, events)
     log_sequences, clusters = clustering.cluster()
+    print(clusters)
 
-    document_events = []
-    document_names = []
-    for name, status in events.items():
-        document_events.append(Event(name=name, status=status))
-        document_names.append(name)
+    # document_clusters = []
+    # for cluster in clusters:
+    #     document_clusters.append(
+    #         Cluster(
+    #             centroid=cluster.get('centroid'),
+    #             num_possible_abnormal_events=cluster.get(
+    #                 'num_possible_abnormal_events'),
+    #             possible_abnormal_events=cluster.get(
+    #                 'possible_abnormal_events')
+    #         )
+    #     )
 
-    system = System.objects(name=system_name).first()
+    # document_events = []
+    # document_names = []
+    # for name, status in events.items():
+    #     document_events.append(Event(name=name, status=status))
+    #     document_names.append(name)
 
-    system_events_name = [event.name for event in system.events]
+    # system = System.objects(name=system_name).first()
 
-    setEvents = set(document_names)
-    setSystemEventsName = set(system_events_name)
+    # system_events_name = [event.name for event in system.events]
 
-    unregisteredEvents = list(setEvents - setSystemEventsName)
+    # setEvents = set(document_names)
+    # setSystemEventsName = set(system_events_name)
+
+    # unregisteredEvents = list(setEvents - setSystemEventsName)
+
     # agregar los unregisteredEvents al system en el atributo de events
 
     # falta merterle a result los clusters, si se junta el preprocess y detect
@@ -132,15 +147,16 @@ def detect(user_id, system_name, filename):
     #     'event(juanchito * pepito)': ['blk343545', 'blk565478']
     # }
 
-    result = Result(
-        user_id=user_id,
-        path=f'{system_name}/{filename}',
-        events=document_events
-    )
+    # result = Result(
+    #     user_id=user_id,
+    #     path=f'{system_name}/{filename}',
+    #     events=document_events
 
-    #verificar el json document_events
+    # )
+
+    # verificar el json document_events
     return jsonify({
-        'events': document_events,
+        'events': events,
         'clusters': clusters
     })
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <p class="subtitle has-text-weight-bold">Events</p>
     <div v-if="this.getEvents">
       <b-table
@@ -23,7 +23,12 @@
           </b-table-column>
 
           <b-table-column field="status" label="Status">
-            {{ props.row.status }}
+            <div v-if="props.row.status == 'INFO'">
+              <span class="tag is-success">{{ props.row.status }}</span>
+            </div>
+            <div v-else>
+              <span class="tag is-danger">{{ props.row.status }}</span>
+            </div>
           </b-table-column>
         </template>
       </b-table>
@@ -31,14 +36,14 @@
     <div v-else>
       <p>No results yet</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 
 export default {
-  name: "LogParserResults",
+  name: "LogEventsResult",
   computed: {
     ...mapGetters(["getEvents"])
   }
