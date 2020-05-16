@@ -3,20 +3,22 @@
     <h1 class="title">Charts</h1>
     <LogEventsResult />
     <br />
+    <LogClustersResult />
+    <br />
     <!-- <FeatureExtractorResults /> -->
   </div>
 </template>
 
 <script>
 import LogEventsResult from "@/components/LogEventsResult.vue";
-// import LogClustersResult from "@/components/LogClustersResult.vue";
+import LogClustersResult from "@/components/LogClustersResult.vue";
 // import FeatureExtractorResults from "@/components/FeatureExtractorResults.vue";
 
 export default {
   name: "Charts",
   components: {
     LogEventsResult,
-    // LogClustersResult
+    LogClustersResult
     // FeatureExtractorResults
   }
 };
