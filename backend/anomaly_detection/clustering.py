@@ -46,15 +46,14 @@ class Clustering():
 
     def calculate_centroid(self):
         for cluster_id in self.clusters:
-            features = [self.log_sequences[log_sequence_id]['Features Vector'] for log_sequence_id in self.clusters[cluster_id]['Log Sequence IDs']]
+            features_vectors_cluster = [self.log_sequences[log_sequence_id]['Features Vector'] for log_sequence_id in self.clusters[cluster_id]['Log Sequence IDs']]
             
-            arr = np.array(features)
+            arr = np.array(features_vectors_cluster)
             length, dim = arr.shape
             
             centroid = np.array([np.sum(arr[:, i])/length for i in range(dim)])
             
             self.clusters[cluster_id]['Centroid'] = centroid
-            
             self.clusters[cluster_id]['Events'] = []
             
             for event_centroid_index in range(len(centroid)): 
@@ -64,22 +63,21 @@ class Clustering():
         for cluster_id in self.clusters:
             centroid = self.clusters[cluster_id]['Centroid']
 
-            num_possible_abnormal_events = 0 # Número de posibles eventos anómalos en el clúster.
-            
-            self.clusters[cluster_id]['Posibble Abnormal'] = {}
+            self.clusters[cluster_id]['possible_abnormal_events'] = 0
 
-            for possible_abnormal_event_index in self.possible_abnormal_events:
-                possible_abnormal_log_sequences = [] # En qué log_sequences está el posible evento anómalo.
+            for possible_abnormal_event in self.possible_abnormal_events:
                 
+                possible_abnormal_event_index = self.events.index(possible_abnormal_event)
+            
                 if centroid[possible_abnormal_event_index] != 0:
-                    num_possible_abnormal_events += 1
                     
+                    self.clusters[cluster_id]['possible_abnormal_events'] += 1
+                    self.clusters[cluster_id][possible_abnormal_event] = []
+
                     for log_sequence_id in self.clusters[cluster_id]['Log Sequence IDs']:
                         if self.log_sequences[log_sequence_id]['Representative Log Sequence'][possible_abnormal_event_index] == 1:
-                            possible_abnormal_log_sequences.append(log_sequence_id)
-                
-                self.clusters[cluster_id]['Posibble Abnormal'][possible_abnormal_event_index] = possible_abnormal_log_sequences
+                            self.clusters[cluster_id][possible_abnormal_event].append(log_sequence_id)
 
-            self.clusters[cluster_id]['Num Possible Abnormal'] = num_possible_abnormal_events
-
-            #print('For cluster_id ' + str(cluster_id) + ' we have ' + str(num_possible_abnormal_events) + ' possible abnormal events.')
+            del self.clusters[cluster_id]['Log Sequence IDs']
+            del self.clusters[cluster_id]['Events']
+            del self.clusters[cluster_id]['Centroid']
