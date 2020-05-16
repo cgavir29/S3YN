@@ -72,7 +72,8 @@ class Clustering():
         for cluster_id in self.clusters:
             centroid = self.clusters[cluster_id]['centroid']
 
-            self.clusters[cluster_id]['possible_abnormal_events'] = 0
+            self.clusters[cluster_id]['num_possible_abnormal_events'] = 0
+            self.clusters[cluster_id]['possible_abnormal_events'] = {}
 
             for possible_abnormal_event in self.possible_abnormal_events:
                 
@@ -80,13 +81,13 @@ class Clustering():
             
                 if centroid[possible_abnormal_event_index] != 0:
                     
-                    self.clusters[cluster_id]['possible_abnormal_events'] += 1
-                    self.clusters[cluster_id][possible_abnormal_event] = []
+                    self.clusters[cluster_id]['num_possible_abnormal_events'] += 1
+                    self.clusters[cluster_id]['possible_abnormal_events'][possible_abnormal_event] = []
 
                     for log_sequence_id in self.clusters[cluster_id]['Log Sequence IDs']:
                         if self.log_sequences[log_sequence_id]['Representative Log Sequence'][possible_abnormal_event_index] == 1:
-                            self.clusters[cluster_id][possible_abnormal_event].append(log_sequence_id)
-
+                            self.clusters[cluster_id]['possible_abnormal_events'][possible_abnormal_event].append(log_sequence_id)
+            
             self.clusters[cluster_id]['centroid'] = centroid.tolist()
             
             del self.clusters[cluster_id]['Log Sequence IDs']

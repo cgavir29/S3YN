@@ -13,6 +13,6 @@ clustering = Clustering(log_sequences, tagged_events)
 cluster_ids, cluster_values = clustering.cluster()
 
 for cluster_value in cluster_values:
-    if cluster_value['possible_abnormal_events'] != 0:
+    if cluster_value['num_possible_abnormal_events'] != 0:
         print(cluster_value)
         print()
