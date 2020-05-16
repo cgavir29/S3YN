@@ -7,10 +7,12 @@ from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 from pymongo import MongoClient
 
 class Clustering():
-    def __init__(self, log_sequences, events, possible_abnormal_events):
+    def __init__(self, log_sequences, tagged_events):
         self.log_sequences = log_sequences
-        self.events = events
-        self.possible_abnormal_events = possible_abnormal_events
+        self.tagged_events = tagged_events
+        
+        self.events = []
+        self.possible_abnormal_events = []
 
         self.clusters = {}
         self.possible_abnormal_clusters = []
@@ -19,6 +21,7 @@ class Clustering():
         self.db = self.client.test
 
     def cluster(self):
+        self.extract_events()
         self.generate_clusters()
         self.calculate_centroid()
         self.generate_possible_abnormal_clusters()
@@ -30,6 +33,12 @@ class Clustering():
           print(str(document['centroid']) + ' -> ' + str(document['status']))
         '''
         return self.log_sequences, self.clusters
+
+    def extract_events(self):
+        self.events = list(self.tagged_events.keys())
+        
+        for key, value in self.tagged_events.items():
+            if value == 'WARN': self.possible_abnormal_events.append(key)
 
     def generate_clusters(self):
         log_sequence_ids = list(self.log_sequences.keys())
