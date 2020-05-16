@@ -106,9 +106,9 @@ def detect(user_id, system_name, filename):
     extractor = FeatureExtractor(log_sequences, events)
     log_sequences = extractor.extract()
 
-    # clustering = Clustering(log_sequences, events)
-    # log_sequences, clusters = clustering.cluster()
-
+    clustering = Clustering(log_sequences, events)
+    log_sequences, clusters = clustering.cluster()
+    print(len(clusters))
     # document_events = []
     # document_names = []
     # for name, status in events.items():
@@ -143,7 +143,7 @@ def detect(user_id, system_name, filename):
     # verificar el json document_events
     return jsonify({
         'events': events,
-        # 'clusters': clusters
+        'clusters': []
     })
 
 

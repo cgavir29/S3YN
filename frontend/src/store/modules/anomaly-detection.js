@@ -113,9 +113,11 @@ const actions = {
         //   idxAnomaly++;
         // }
 
+        console.log(res.data.clusters);
+
         commit("setEvents", eventsWithId);
         // commit("setAnomalies", anomaliesWithId);
-        commit("setClusters", res.data.clusters);
+        // commit("setClusters", res.data.clusters);
       })
       .catch(err => console.log(err));
   }

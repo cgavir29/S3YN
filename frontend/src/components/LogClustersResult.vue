@@ -6,7 +6,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "AnomalyDetectionResults",
+  name: "LogClustersResult",
   computed: {
     ...mapGetters(["getClusters"])
   }
