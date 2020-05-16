@@ -32,7 +32,7 @@ class Clustering():
         for document in cursor:
           print(str(document['centroid']) + ' -> ' + str(document['status']))
         '''
-        return self.log_sequences, self.clusters
+        return list(self.clusters.keys()), list(self.clusters.values())
 
     def extract_events(self):
         self.events = list(self.tagged_events.keys())
@@ -62,7 +62,7 @@ class Clustering():
             
             centroid = np.array([np.sum(arr[:, i])/length for i in range(dim)])
             
-            self.clusters[cluster_id]['Centroid'] = centroid
+            self.clusters[cluster_id]['centroid'] = centroid
             self.clusters[cluster_id]['Events'] = []
             
             for event_centroid_index in range(len(centroid)): 
@@ -70,7 +70,7 @@ class Clustering():
            
     def generate_possible_abnormal_clusters(self):
         for cluster_id in self.clusters:
-            centroid = self.clusters[cluster_id]['Centroid']
+            centroid = self.clusters[cluster_id]['centroid']
 
             self.clusters[cluster_id]['possible_abnormal_events'] = 0
 
@@ -87,6 +87,7 @@ class Clustering():
                         if self.log_sequences[log_sequence_id]['Representative Log Sequence'][possible_abnormal_event_index] == 1:
                             self.clusters[cluster_id][possible_abnormal_event].append(log_sequence_id)
 
+            self.clusters[cluster_id]['centroid'] = centroid.tolist()
+            
             del self.clusters[cluster_id]['Log Sequence IDs']
             del self.clusters[cluster_id]['Events']
-            del self.clusters[cluster_id]['Centroid']
