@@ -15,6 +15,8 @@
         </b-dropdown-item>
       </div>
     </b-dropdown>
+    <br />
+    <br />
     <div class="large-12 medium-12 small-12 cell">
       <input
         type="file"

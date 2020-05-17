@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const state = {
-  logs: null,
-  events: null,
-  clusters: null
+  logs: [],
+  events: [],
+  clusters: []
 };
 
 const getters = {
@@ -14,11 +14,11 @@ const getters = {
 
 const mutations = {
   setLogs: (state, logs) => (state.logs = logs),
-  clearLogs: state => (state.logs = null),
+  clearLogs: state => (state.logs = []),
   setEvents: (state, events) => (state.events = events),
-  clearEvents: state => (state.events = null),
+  clearEvents: state => (state.events = []),
   setClusters: (state, clusters) => (state.clusters = clusters),
-  clearClusters: state => (state.clusters = null)
+  clearClusters: state => (state.clusters = [])
 };
 
 const actions = {
@@ -82,15 +82,14 @@ const actions = {
         let idxEvent = 1;
         let eventsWithId = [];
 
-        for (let [event, status] of Object.entries(res.data.events)) {
+        res.data.events.forEach(event => {
           eventsWithId.push({
             id: idxEvent,
-            event: event,
-            status: status
+            event: event.name,
+            status: event.status
           });
-          idxEvent++;
-        }
-
+        });
+        
         commit("setEvents", eventsWithId);
         commit("setClusters", res.data.clusters);
       })

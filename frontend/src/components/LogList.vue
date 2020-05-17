@@ -1,7 +1,9 @@
 <template>
   <section>
-    <div v-if="!getLogs">
-      <p>You haven't uploaded any logs yet.</p>
+    <div v-if="this.getLogs.length == 0">
+      <span class="tag is-warning is-medium"
+        >You haven't uploaded any logs yet</span
+      >
     </div>
     <div v-else>
       <b-tabs>
@@ -21,7 +23,8 @@
         :disabled="!selected"
         @click="isLogPreviewModalActive = true"
       >
-        Preview
+        <b-icon class="fas fa-search"></b-icon>
+        <span>Preview</span>
       </b-button>
       <b-modal
         :active.sync="isLogPreviewModalActive"
@@ -44,7 +47,8 @@
         :disabled="!selected"
         @click="runFetchAnomalyDetection"
       >
-        Detect Anomalies
+        <b-icon class="fas fa-cogs"></b-icon>
+        <span>Detect Anomalies</span>
       </b-button>
       &nbsp;
       <button
