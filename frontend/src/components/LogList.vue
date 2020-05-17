@@ -1,7 +1,9 @@
 <template>
   <section>
-    <div v-if="!getLogs">
-      <p>You haven't uploaded any logs yet.</p>
+    <div v-if="this.getLogs.length == 0">
+      <span class="tag is-warning is-medium"
+        >You haven't uploaded any logs yet</span
+      >
     </div>
     <div v-else>
       <b-tabs>

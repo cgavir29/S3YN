@@ -1,7 +1,7 @@
 <template>
   <section>
     <p class="subtitle has-text-weight-bold">Events</p>
-    <div v-if="this.getEvents">
+    <div v-if="this.getEvents.length > 0">
       <b-table
         :data="this.getEvents"
         ref="table"

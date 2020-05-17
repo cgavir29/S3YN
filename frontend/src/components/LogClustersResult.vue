@@ -1,7 +1,7 @@
 <template>
   <section>
     <p class="subtitle has-text-weight-bold">Clusters</p>
-    <div v-if="this.getClusters">
+    <div v-if="this.getClusters.length > 0">
       <div v-for="(cluster, index) in this.getClusters" :key="index">
         <LogCluster
           :index="index + 1"
