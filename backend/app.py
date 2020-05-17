@@ -99,65 +99,91 @@ def get_file(user_id, system_name, filename):
 # --------------------------------------------------------------------------------
 @app.route('/users/<user_id>/systems/<system_name>/files/<filename>/detect', methods=['POST'])
 def detect(user_id, system_name, filename):
-    parser = LogParser(
-        f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
-    events, log_sequences = parser.parse()
+    document_warn_events = []
+    possible_abnormal_clusters = []
 
-    extractor = FeatureExtractor(log_sequences, events)
-    log_sequences = extractor.extract()
+    old_result = Result.objects(path=f'{system_name}/{filename}')
+    if old_result:
+        events = old_result.get().events
 
-    clustering = Clustering(log_sequences, events)
-    log_sequences, clusters = clustering.cluster()
-    print(clusters)
+        for event in events:
+            if event.status == 'WARN':
+                document_warn_events.append(event)
 
-    # document_clusters = []
-    # for cluster in clusters:
-    #     document_clusters.append(
-    #         Cluster(
-    #             centroid=cluster.get('centroid'),
-    #             num_possible_abnormal_events=cluster.get(
-    #                 'num_possible_abnormal_events'),
-    #             possible_abnormal_events=cluster.get(
-    #                 'possible_abnormal_events')
-    #         )
-    #     )
+        clusters = old_result.get().clusters
 
-    # document_events = []
-    # document_names = []
-    # for name, status in events.items():
-    #     document_events.append(Event(name=name, status=status))
-    #     document_names.append(name)
+        for cluster in clusters:
+            if cluster.num_possible_abnormal_events != 0:
+                possible_abnormal_clusters.append(cluster)
 
-    # system = System.objects(name=system_name).first()
+    else:
+        parser = LogParser(
+            f'{config.UPLOADS_FOLDER}/{user_id}/{system_name}/{filename}')
+        events, log_sequences = parser.parse()
 
-    # system_events_name = [event.name for event in system.events]
+        extractor = FeatureExtractor(log_sequences, events)
+        log_sequences = extractor.extract()
 
-    # setEvents = set(document_names)
-    # setSystemEventsName = set(system_events_name)
+        clustering = Clustering(log_sequences, events)
+        log_sequences, clusters = clustering.cluster()
 
-    # unregisteredEvents = list(setEvents - setSystemEventsName)
+        document_clusters = []
+        for cluster in clusters:
+            document_clusters.append(
+                Cluster(
+                    centroid=cluster.get('centroid'),
+                    num_possible_abnormal_events=cluster.get(
+                        'num_possible_abnormal_events'),
+                    possible_abnormal_events=cluster.get(
+                        'possible_abnormal_events')
+                )
+            )
 
-    # agregar los unregisteredEvents al system en el atributo de events
+        document_events = []
+        document_names = []
+        for name, status in events.items():
+            document_events.append(Event(name=name, status=status))
+            document_names.append(name)
 
-    # falta merterle a result los clusters, si se junta el preprocess y detect
-    # ir al modelo de result y pner el campo cluster required true
+        system = System.objects(name=system_name).first()
 
-    # {
-    #     'posible_abnormal_events': 1,
-    #     'event(juanchito * pepito)': ['blk343545', 'blk565478']
-    # }
+        system_events_name = [event.name for event in system.events]
 
-    # result = Result(
-    #     user_id=user_id,
-    #     path=f'{system_name}/{filename}',
-    #     events=document_events
+        setEvents = set(document_names)
+        setSystemEventsName = set(system_events_name)
 
-    # )
+        unregisteredEvents = list(setEvents - setSystemEventsName)
 
-    # verificar el json document_events
+        document_unregister_events = []
+
+        for name, status in events.items():
+            if name in unregisteredEvents:
+                document_unregister_events.append(
+                    Event(name=name, status=status))
+            if status == 'WARN':
+                document_warn_events.append(
+                    Event(name=name, status=status))
+
+        system.events = document_unregister_events
+        system.save()
+
+        result = Result(
+            user_id=user_id,
+            path=f'{system_name}/{filename}',
+            events=document_events,
+            clusters=document_clusters
+
+        )
+
+        result.save()
+
+        for cluster in document_clusters:
+            if cluster.num_possible_abnormal_events != 0:
+                possible_abnormal_clusters.append(cluster)
+
     return jsonify({
-        'events': events,
-        'clusters': clusters
+        'events': document_warn_events,
+        'clusters': possible_abnormal_clusters
     })
 
 
