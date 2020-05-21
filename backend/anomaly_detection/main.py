@@ -10,9 +10,12 @@ extractor = FeatureExtractor(log_sequences, list(tagged_events.keys()))
 log_sequences = extractor.extract()
 
 clustering = Clustering(log_sequences, tagged_events)
-cluster_ids, cluster_values = clustering.cluster()
+cluster_ids, cluster_values, silhouette = clustering.cluster()
+
 
 for cluster_value in cluster_values:
     if cluster_value['num_possible_abnormal_events'] != 0:
         print(cluster_value)
         print()
+
+print ("El coeficiente de silueta es =", silhouette)
