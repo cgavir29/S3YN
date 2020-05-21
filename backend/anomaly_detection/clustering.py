@@ -4,7 +4,8 @@ import pandas as pd  # para el analisis de datos
 import scipy.cluster.hierarchy as sch
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
-from sklearn.metrics import silhouette_score
+#from sklearn.metrics import silhouette_score
+#from sklearn import model_selection
 
 from pymongo import MongoClient
 
@@ -20,7 +21,8 @@ class Clustering():
         self.clusters = {}
         self.possible_abnormal_clusters = []
 
-        self.silhouette = 0
+        #self.silhouette = 0
+        #self.crossValidation = 0
 
         self.client = MongoClient(
             'mongodb+srv://s3yn:s3yn@pi2-j348a.mongodb.net/test?retryWrites=true&w=majority')
@@ -39,7 +41,8 @@ class Clustering():
           print(str(document['centroid']) + ' -> ' + str(document['status']))
         '''
 
-        return list(self.clusters.keys()), list(self.clusters.values()), self.silhouette
+        return list(self.clusters.keys()), list(self.clusters.values())
+        #self.silhouette, self.crossValidation
 
     def extract_events(self):
         self.events = list(self.tagged_events.keys())
@@ -56,7 +59,12 @@ class Clustering():
         hierarchy_clustering = linkage(features_vectors, 'ward')
         cluster_ids = fcluster(hierarchy_clustering, t=2, criterion='distance')
 
-        self.silhouette = silhouette_score(features_vectors, cluster_ids, metric='euclidean')
+        #self.silhouette = silhouette_score(features_vectors, cluster_ids, metric='euclidean')
+
+        #scoring = {'acc': 'accuracy',
+        #           'prec_macro': 'precision_macro',
+        #           'rec_micro': 'recall_macro'}
+        #scores = model_selection.cross_validate(cluster_ids, features_vectors.data, features_vectors.target, scoring=scoring, cv=5, return_train_score=True)
 
         i = 0
         for cluster_id in cluster_ids:
@@ -113,4 +121,5 @@ class Clustering():
 
             del self.clusters[cluster_id]['Log Sequence IDs']
             del self.clusters[cluster_id]['Events']
+
 
