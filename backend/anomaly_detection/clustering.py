@@ -4,7 +4,7 @@ import pandas as pd  # para el analisis de datos
 import scipy.cluster.hierarchy as sch
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
-#from sklearn.metrics import silhouette_score
+from sklearn.metrics import silhouette_score
 #from sklearn import model_selection
 
 from pymongo import MongoClient
@@ -21,7 +21,7 @@ class Clustering():
         self.clusters = {}
         self.possible_abnormal_clusters = []
 
-        #self.silhouette = 0
+        self.silhouette = 0
         #self.crossValidation = 0
 
         self.client = MongoClient(
@@ -41,8 +41,7 @@ class Clustering():
           print(str(document['centroid']) + ' -> ' + str(document['status']))
         '''
 
-        return list(self.clusters.keys()), list(self.clusters.values())
-        #self.silhouette, self.crossValidation
+        return list(self.clusters.keys()), list(self.clusters.values()), self.silhouette
 
     def extract_events(self):
         self.events = list(self.tagged_events.keys())
@@ -59,12 +58,11 @@ class Clustering():
         hierarchy_clustering = linkage(features_vectors, 'ward')
         cluster_ids = fcluster(hierarchy_clustering, t=2, criterion='distance')
 
-        #self.silhouette = silhouette_score(features_vectors, cluster_ids, metric='euclidean')
+        self.silhouette = silhouette_score(features_vectors, cluster_ids, metric='euclidean')
 
-        #scoring = {'acc': 'accuracy',
-        #           'prec_macro': 'precision_macro',
-        #           'rec_micro': 'recall_macro'}
-        #scores = model_selection.cross_validate(cluster_ids, features_vectors.data, features_vectors.target, scoring=scoring, cv=5, return_train_score=True)
+        #kfold = model_selection.KFold(n_splits=10)
+        #results_kfold = model_selection.cross_val_score(cluster_ids, self.log_sequences, cv=kfold)
+        #self.crossValidation = results_kfold.mean()
 
         i = 0
         for cluster_id in cluster_ids:
